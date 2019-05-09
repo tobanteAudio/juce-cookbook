@@ -1,0 +1,125 @@
+# JUCE - Cookbook
+
+## Content
+
+- Why did I write this
+  - Collection of resources
+  - Cheatsheet for myself
+- Disclaimer
+  - No expert
+  - Student
+- Code license
+  - [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.de)
+  - Public Domain Dedication
+- How to read
+  - Report bugs
+  - Add stuff
+- How to run examples
+  - Windows
+  - Mac
+  - Linux
+- Why JUCE?
+  - Audience
+  - Features
+  - Other frameworks/libraries
+    - Qt
+      - Bad for audio
+      - To big
+      - expensive
+    - SFML
+      - very simple
+      - intended for games
+    - imgui
+      - very simple
+      - intented for simple widgets
+      - works well with SFML
+        - cpp_box
+- JUCE documentation / forum
+- Book
+- Youtube
+  - The Audio Programmer
+  - ADC Talks
+- Discord
+- C++
+  - New to C++
+  - Modern standard
+  - Resources
+    - CppWeekly
+    - TheCherno
+    - CppCon, etc.
+    - Books
+  - Idiums
+    - Inheritence
+      - virtual / override
+    - Lambdas
+    - Constexpr
+    - Smart Pointer
+    - Container
+    - noexcept
+  - Tools
+    - compiler
+      - warnings
+      - clang from source
+    - clang-tidy
+      - Visual Studio
+    - clang-format
+      - A must
+      - Pick a standard
+    - compiler-explorer
+    - sanitizers
+      - gcc & clang
+    - Makefile/Scripts
+- Basics
+  - Project Setup
+  - Project Managment
+    - git submodules
+    - living at head
+  - Project Documentation
+    - Github Pages
+    - Doxygen
+  - Platforms
+    - Linux
+      - Dependencies
+      - Ubuntu
+      - Arch
+      - Fedora
+    - Raspberry PI
+  - Mobil
+- UI
+  - Basic Components
+  - Projucer live build
+    - Tricks
+  - Animations
+  - LookAndFeel
+- DSP
+  - DSP module
+  - AudioProcessor
+  - Plugins
+    - VST/AU
+    - ValueTree/Undo
+- MVC
+  - Why
+  - Example
+- Network/File IO
+  - OSC
+    - Arduino
+- OpenGL
+- Custom modules
+- Tracktion Engine
+- Unit tests
+  - pluginval
+- CI
+  - travis
+  - appveyor
+  - deploy
+- Publish
+- My wishlist for JUCE
+  - FreeBSD support
+  - Build system
+- What next
+  - Read the source
+  - Read other app written in juce
+- Related Resources
+  - Faust
+    - Youtube
+  - std::audio
