@@ -6,13 +6,15 @@
   - Collection of resources
   - Cheatsheet for myself
 - Disclaimer
+  - Unofficial
   - No expert
   - Student
 - Code license
   - [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.de)
   - Public Domain Dedication
+  - JUCE license
 - How to read
-  - Report bugs
+  - Report bugs & spelling mistakes
   - Add stuff
 - How to run examples
   - Windows
@@ -20,6 +22,8 @@
   - Linux
 - Why JUCE?
   - Audience
+    - Audio
+    - Mobil
   - Features
   - Other frameworks/libraries
     - Qt
@@ -53,30 +57,49 @@
       - virtual / override
     - Lambdas
     - Constexpr
-    - Smart Pointer
-    - Container
-    - noexcept
+    - Smart Pointer (unique & shared)
+    - Container (vectors & arrays)
+    - noexcept where possible
+    - const where possible
   - Tools
+    - IDE
+      - Visual Studio
+      - XCode
+      - Makefile
+      - Visual Studio Code
+      - CodeBlocks
     - compiler
-      - warnings
+      - warnings are your friend
       - clang from source
+      - cross platform different warnings
     - clang-tidy
       - Visual Studio
+      - from terminal/python script
     - clang-format
       - A must
       - Pick a standard
+      - Visual Studio integration
+      - python script
     - compiler-explorer
     - sanitizers
       - gcc & clang
     - Makefile/Scripts
-- Basics
+- Getting Started
+  - Project Types
+    - AudioApp
+    - Plugin
   - Project Setup
+    - Projucer
+    - AudioPluginHost
+      - IDE Integration
   - Project Managment
     - git submodules
     - living at head
   - Project Documentation
+    - comments
     - Github Pages
     - Doxygen
+    - readthedocs
   - Platforms
     - Linux
       - Dependencies
@@ -85,14 +108,18 @@
       - Fedora
     - Raspberry PI
   - Mobil
+  - Project template/cookicutter
 - UI
   - Basic Components
+    - Top list
   - Projucer live build
     - Tricks
   - Animations
   - LookAndFeel
 - DSP
   - DSP module
+    - Gain example
+    - Compressor example
   - AudioProcessor
   - Plugins
     - VST/AU
@@ -100,25 +127,43 @@
 - MVC
   - Why
   - Example
+  - Talk
 - Network/File IO
+  - Record/Playback
+  - Sampler
   - OSC
     - Arduino
 - OpenGL
 - Custom modules
 - Tracktion Engine
 - Unit tests
+  - JUCE unit tests
+  - Catch2
   - pluginval
 - CI
   - travis
+    - macOS
+    - linux
   - appveyor
+    - windows
   - deploy
+    - docs
+    - app/plugin
 - Publish
+  - Github releases
+  - zip
+  - installer/package
 - My wishlist for JUCE
   - FreeBSD support
   - Build system
+  - More widgets
 - What next
+  - Read the docs
   - Read the source
   - Read other app written in juce
+    - modEQ
+    - helm
+    - temper
 - Related Resources
   - Faust
     - Youtube
