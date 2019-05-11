@@ -1,15 +1,4 @@
 ####################
-# Project
-####################
-build
-Builds
-
-####################
-# JUCE
-####################
-JuceLibraryCode
-
-####################
 # EDITORS
 ####################
 .atom
@@ -18,22 +7,6 @@ JuceLibraryCode
 .idea
 
 ####################
-# AutoComplete
+# Build
 ####################
-compile_commands.json
-
-####################
-# C++
-####################
-# Compiled Object files
-*.slo
-*.lo
-*.o
-
-# Compiled Dynamic libraries
-*.so
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+*.pdf

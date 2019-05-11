@@ -1,21 +1,52 @@
 # JUCE - Cookbook
 
+A collection of examples & workflow tips related to the C++ libary JUCE.
+
 ## Content
 
-- Why did I write this
-  - Collection of resources
-  - Cheatsheet for myself
-- Disclaimer
-  - Unofficial
-  - No expert
-  - Student
-- Code license
-  - [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.de)
-  - Public Domain Dedication
-  - JUCE license
+- [Intro](#intro)
+  - [Why did I write this](#why-did-i-write-this)
+  - [About myself](#about-myself)
+- [Disclaimer](#disclaimer)
+- [Code license](#code-license)
+- [Contribute](#contribute)
+- [How to read](#how-to-read)
+- [How to run examples](#how-to-run-examples)
+
+## Intro
+
+### Why did I write this
+
+I started using JUCE because I wanted to make my own audio plugins and after doing a little bit research JUCE seemed to be the way to go.
+
+Over the last couple of years, I have collected all of the resources related to JUCE that I could find. The list of bookmarked pages & code snippets have grown to quite a collection, so I decided to publish them as a cheatsheet for myself and everybody else who uses or wants to use JUCE.
+
+### About myself
+
+I started with programming at the age of 10. C++ was my first and primary language for the first couple of years. I have since then used Python, JS & Golang. I currently studying computer science with a focus on embedded systems in Berlin.
+
+## Disclaimer
+
+I'm definitely not an expert in JUCE or C++. I do have a job as a C++ developer, but unfortunatly not using JUCE. So if you find any problems in my examples, feel free to open an issue.
+
+## Code license
+
+JUCE is published under a dual license, it is free for open source projects & small projects. You can find their license for JUCE 5 [here](https://juce.com/juce-5-license).
+
+All of my example code in this repository is published to the public domain under the [Creative Commons CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.de) license.
+
+## Contribute
+
+If you find any bugs or design problems in my examples feel free to open up an issue on Github.
+
+If you want to add examples or resources to this collection you can eather push a pull request directly or open up an issue first, if you have any questions.
+
+## How to read
+
+## How to run examples
+
 - How to read
-  - Report bugs & spelling mistakes
-  - Add stuff
+  - Each chapter can be read individually
 - How to run examples
   - Windows
   - Mac
@@ -23,11 +54,20 @@
 - Why JUCE?
   - Audience
     - Audio
+      - Wraps all common plugin types.
+      - Basic DSP & Analysis
+      - Vector instructions for x86 and ARM
     - Mobil
+      - Easilly use C++ for both Android & iOS
+      - Use native features
   - Features
+    - Cross platform
+    - Collection of GUI widgets
+    - Easially customizable
+    - Solves common application problems (File IO, Network & Undo)
   - Other frameworks/libraries
     - Qt
-      - Bad for audio
+      - Not really intended for realtime audio
       - To big
       - expensive
     - SFML
@@ -47,6 +87,9 @@
 - C++
   - New to C++
   - Modern standard
+    - JUCE >= C++14
+    - C++17 Features
+    - C++20 Features
   - Resources
     - CppWeekly
     - TheCherno
@@ -72,6 +115,7 @@
       - warnings are your friend
       - clang from source
       - cross platform different warnings
+      - old versions in distros
     - clang-tidy
       - Visual Studio
       - from terminal/python script
@@ -138,6 +182,7 @@
 - Tracktion Engine
 - Unit tests
   - JUCE unit tests
+    - How to run them in a plugin build
   - Catch2
   - pluginval
 - CI
