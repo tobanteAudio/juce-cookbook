@@ -1,7 +1,6 @@
 #pragma once
 
-// BASIC
-constexpr char* VERTEX_SHADER_SOURCE = R"(
+constexpr char* VERTEX_SHADER_SRC = R"(
     #version 430 core
 
     layout (location = 0) in vec3 aPos;
@@ -12,15 +11,15 @@ constexpr char* VERTEX_SHADER_SOURCE = R"(
     }
 )";
 
-constexpr char* FRAGMENT_SHADER_SOURCE = R"(
+constexpr char* FRAGMENT_SHADER_SRC = R"(
     #version 430 core
 
-    out vec4 FragColor;
+    out vec4 color;
 
     uniform vec4 ourColor;
 
     void main()
     {
-        FragColor = ourColor;
+        color = ourColor;
     }
 )";

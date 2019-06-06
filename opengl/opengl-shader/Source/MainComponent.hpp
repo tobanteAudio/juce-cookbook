@@ -29,6 +29,6 @@ private:
     std::unique_ptr<tobanteAudio::Shader> m_shader;
     GLuint m_vertexArrayObject;
 
-	float m_counter{};
+    float m_counter {};
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(MainComponent)
 };
