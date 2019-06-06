@@ -1,21 +1,14 @@
-/*
-  ==============================================================================
-
-    This file was auto-generated!
-
-  ==============================================================================
-*/
-
 #pragma once
 
 #include "../JuceLibraryCode/JuceHeader.h"
+#include "Shader.hpp"
 
 //==============================================================================
 /*
     This component lives inside our window, and this is where you should put all
     your controls and content.
 */
-class MainComponent   : public OpenGLAppComponent
+class MainComponent : public OpenGLAppComponent
 {
 public:
     //==============================================================================
@@ -28,13 +21,14 @@ public:
     void render() override;
 
     //==============================================================================
-    void paint (Graphics& g) override;
+    void paint(Graphics& g) override;
     void resized() override;
 
 private:
     //==============================================================================
-    // Your private member variables go here...
+    std::unique_ptr<tobanteAudio::Shader> m_shader;
+    GLuint m_vertexArrayObject;
 
-
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
+	float m_counter{};
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(MainComponent)
 };
