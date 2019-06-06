@@ -33,7 +33,7 @@ void MainComponent::render()
     OpenGLHelpers::clear(Colours::green);
 
     // Points in 3D space
-    GLfloat verts[]{-1.0f, -1.0f, 0.0f, 1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f};
+    GLfloat verts[] {-1.0f, -1.0f, 0.0f, 1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f};
 
     // An ID for your buffer
     GLuint bufferID;
@@ -45,13 +45,11 @@ void MainComponent::render()
     openGLContext.extensions.glBindBuffer(GL_ARRAY_BUFFER, bufferID);
 
     // Let GL know about our veritices
-    openGLContext.extensions.glBufferData(GL_ARRAY_BUFFER, sizeof(verts), verts,
-                                          GL_STATIC_DRAW);
+    openGLContext.extensions.glBufferData(GL_ARRAY_BUFFER, sizeof(verts), verts, GL_STATIC_DRAW);
 
     openGLContext.extensions.glEnableVertexAttribArray(0);
 
-    openGLContext.extensions.glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0,
-                                                   nullptr);
+    openGLContext.extensions.glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, nullptr);
     // Draw three verticies
     glDrawArrays(GL_TRIANGLES, 0, 3);
     openGLContext.extensions.glDisableVertexAttribArray(0);

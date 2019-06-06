@@ -18,14 +18,8 @@ public:
     //==============================================================================
     basicopenglApplication() {}
 
-    const String getApplicationName() override
-    {
-        return ProjectInfo::projectName;
-    }
-    const String getApplicationVersion() override
-    {
-        return ProjectInfo::versionString;
-    }
+    const String getApplicationName() override { return ProjectInfo::projectName; }
+    const String getApplicationVersion() override { return ProjectInfo::versionString; }
     bool moreThanOneInstanceAllowed() override { return true; }
 
     //==============================================================================
@@ -69,11 +63,10 @@ public:
     {
     public:
         MainWindow(String name)
-            : DocumentWindow(
-                  "tobanteAudio: Basic OpenGL",
-                  Desktop::getInstance().getDefaultLookAndFeel().findColour(
-                      ResizableWindow::backgroundColourId),
-                  DocumentWindow::allButtons)
+            : DocumentWindow("tobanteAudio: OpenGL - Basic",
+                             Desktop::getInstance().getDefaultLookAndFeel().findColour(
+                                 ResizableWindow::backgroundColourId),
+                             DocumentWindow::allButtons)
         {
             ignoreUnused(name);
             setUsingNativeTitleBar(true);
