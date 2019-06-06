@@ -1,5 +1,3 @@
-#include "../JuceLibraryCode/JuceHeader.h"
-
 #include "MainComponent.hpp"
 
 //==============================================================================
