@@ -1,5 +1,5 @@
 #include "MainComponent.hpp"
-
+#include "GL/ShaderSource.hpp"
 MainComponent::MainComponent()
 {
     setSize(1280, 720);
@@ -23,7 +23,7 @@ void MainComponent::render()
 {
     jassert(OpenGLHelpers::isContextActive());
 
-    auto desktopScale = (float)openGLContext.getRenderingScale();
+    auto desktopScale = static_cast<float>(openGLContext.getRenderingScale());
     OpenGLHelpers::clear(getLookAndFeel().findColour(ResizableWindow::backgroundColourId));
 
     glEnable(GL_BLEND);
@@ -34,10 +34,14 @@ void MainComponent::render()
     m_shader->use();
 
     if (m_uniforms->projectionMatrix.get() != nullptr)
+    {
         m_uniforms->projectionMatrix->setMatrix4(getProjectionMatrix().mat, 1, false);
+    }
 
     if (m_uniforms->viewMatrix.get() != nullptr)
+    {
         m_uniforms->viewMatrix->setMatrix4(getViewMatrix().mat, 1, false);
+    }
 
     m_shape->draw(openGLContext, *m_attributes);
 
@@ -74,51 +78,17 @@ Matrix3D<float> MainComponent::getProjectionMatrix() const
 Matrix3D<float> MainComponent::getViewMatrix() const
 {
     Matrix3D<float> viewMatrix({0.0f, 0.0f, -10.0f});
-    Matrix3D<float> rotationMatrix
-        = viewMatrix.rotation({-0.3f, 5.0f * std::sin(getFrameCounter() * 0.01f), 0.0f});
+    Matrix3D<float> rotationMatrix = viewMatrix.rotation({-0.3f, 5.0f * std::sin(getFrameCounter() * 0.01f), 0.0f});
 
     return rotationMatrix * viewMatrix;
 }
 
 void MainComponent::createShaders()
 {
-    vertexShader = R"(
-        attribute vec4 position;
-        attribute vec4 sourceColour;
-        attribute vec2 textureCoordIn;
-
-        uniform mat4 projectionMatrix;
-        uniform mat4 viewMatrix;
-
-        varying vec4 destinationColour;
-        varying vec2 textureCoordOut;
-
-        void main()
-        {
-            destinationColour = sourceColour;
-            textureCoordOut = textureCoordIn;
-            gl_Position = projectionMatrix * viewMatrix * position;
-        }
-    )";
-
-    fragmentShader = R"(
-		varying vec4 destinationColour;
-		varying vec2 textureCoordOut;
-
-		void main()
-		{
-
-			vec4 colour = vec4(0.95, 0.57, 0.03, 0.7);
-			gl_FragColor = colour;
-		}
-	)";
-
     std::unique_ptr<OpenGLShaderProgram> newShader(new OpenGLShaderProgram(openGLContext));
     String statusText;
 
-    if (newShader->addVertexShader(OpenGLHelpers::translateVertexShaderToV3(vertexShader))
-        && newShader->addFragmentShader(OpenGLHelpers::translateFragmentShaderToV3(fragmentShader))
-        && newShader->link())
+    if (newShader->addVertexShader(VERTEX_SHADER) && newShader->addFragmentShader(FRAGMENT_SHADER) && newShader->link())
     {
         m_shape.reset();
         m_attributes.reset();

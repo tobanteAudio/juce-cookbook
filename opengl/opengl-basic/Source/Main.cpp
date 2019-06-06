@@ -63,10 +63,10 @@ public:
     {
     public:
         MainWindow(String name)
-            : DocumentWindow("tobanteAudio: OpenGL - Basic",
-                             Desktop::getInstance().getDefaultLookAndFeel().findColour(
-                                 ResizableWindow::backgroundColourId),
-                             DocumentWindow::allButtons)
+            : DocumentWindow(
+                "tobanteAudio: OpenGL - Basic",
+                Desktop::getInstance().getDefaultLookAndFeel().findColour(ResizableWindow::backgroundColourId),
+                DocumentWindow::allButtons)
         {
             ignoreUnused(name);
             setUsingNativeTitleBar(true);

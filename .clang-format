@@ -11,7 +11,7 @@ AllowShortFunctionsOnASingleLine: 'true'
 AllowShortIfStatementsOnASingleLine: 'true'
 AllowShortLoopsOnASingleLine: 'true'
 BreakBeforeBraces: Allman
-ColumnLimit: 102
+ColumnLimit: 120
 ConstructorInitializerAllOnOneLineOrOnePerLine: 'true'
 Cpp11BracedListStyle: 'true'
 FixNamespaceComments: 'true'

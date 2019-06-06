@@ -2,8 +2,8 @@
 
 #include "JuceHeader.h"
 
-#include "WavefrontObject.hpp"
 #include "GL/Vertex.hpp"
+#include "WavefrontObject.hpp"
 
 /**
  * @brief This loads a 3D model #include "../OBJ/WavefrontObject.hpp"
@@ -49,8 +49,7 @@ private:
             createVertexListFromMesh(aShape.mesh, vertices, Colours::green);
 
             openGLContext.extensions.glBufferData(
-                GL_ARRAY_BUFFER,
-                static_cast<GLsizeiptr>(static_cast<size_t>(vertices.size()) * sizeof(Vertex)),
+                GL_ARRAY_BUFFER, static_cast<GLsizeiptr>(static_cast<size_t>(vertices.size()) * sizeof(Vertex)),
                 vertices.getRawDataPointer(), GL_STATIC_DRAW);
 
             openGLContext.extensions.glGenBuffers(1, &indexBuffer);
@@ -83,19 +82,17 @@ private:
     WavefrontObjFile shapeFile;
     OwnedArray<VertexBuffer> vertexBuffers;
 
-    static void createVertexListFromMesh(const WavefrontObjFile::Mesh& mesh, Array<Vertex>& list,
-                                         Colour colour)
+    static void createVertexListFromMesh(const WavefrontObjFile::Mesh& mesh, Array<Vertex>& list, Colour colour)
     {
         auto scale = 0.2f;
-        WavefrontObjFile::TextureCoord defaultTexCoord{0.5f, 0.5f};
-        WavefrontObjFile::Vertex defaultNormal{0.5f, 0.5f, 0.5f};
+        WavefrontObjFile::TextureCoord defaultTexCoord {0.5f, 0.5f};
+        WavefrontObjFile::Vertex defaultNormal {0.5f, 0.5f, 0.5f};
 
         for (auto i = 0; i < mesh.vertices.size(); ++i)
         {
             const auto& v  = mesh.vertices.getReference(i);
             const auto& n  = i < mesh.normals.size() ? mesh.normals.getReference(i) : defaultNormal;
-            const auto& tc = i < mesh.textureCoords.size() ? mesh.textureCoords.getReference(i)
-                                                           : defaultTexCoord;
+            const auto& tc = i < mesh.textureCoords.size() ? mesh.textureCoords.getReference(i) : defaultTexCoord;
 
             list.add({{
                           scale * v.x,
@@ -107,8 +104,7 @@ private:
                           scale * n.y,
                           scale * n.z,
                       },
-                      {colour.getFloatRed(), colour.getFloatGreen(), colour.getFloatBlue(),
-                       colour.getFloatAlpha()},
+                      {colour.getFloatRed(), colour.getFloatGreen(), colour.getFloatBlue(), colour.getFloatAlpha()},
                       {tc.x, tc.y}});
         }
     }

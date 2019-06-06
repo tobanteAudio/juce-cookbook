@@ -58,8 +58,7 @@ bool WavefrontObjFile::matchToken(String::CharPointerType& t, const char* token)
 }
 
 WavefrontObjFile::Shape* WavefrontObjFile::parseFaceGroup(const Mesh& srcMesh, Array<Face>& faceGroup,
-                                                          const Material& material,
-                                                          const String& name)
+                                                          const Material& material, const String& name)
 {
     if (faceGroup.size() == 0) return nullptr;
 
@@ -132,8 +131,7 @@ Result WavefrontObjFile::parseObjFile(const StringArray& lines)
 
         if (matchToken(l, "g") || matchToken(l, "o"))
         {
-            if (Shape* shape = parseFaceGroup(mesh, faceGroup, lastMaterial, lastName))
-                shapes.add(shape);
+            if (Shape* shape = parseFaceGroup(mesh, faceGroup, lastMaterial, lastName)) shapes.add(shape);
 
             faceGroup.clear();
             lastName = StringArray::fromTokens(l, " \t", "")[0];
@@ -146,8 +144,7 @@ Result WavefrontObjFile::parseObjFile(const StringArray& lines)
     return Result::ok();
 }
 
-Result WavefrontObjFile::parseMaterial(Array<WavefrontObjFile::Material>& materials,
-                                       const String& filename)
+Result WavefrontObjFile::parseMaterial(Array<WavefrontObjFile::Material>& materials, const String& filename)
 {
     jassert(sourceFile.exists());
     auto f = sourceFile.getSiblingFile(filename);
@@ -236,8 +233,7 @@ Result WavefrontObjFile::parseMaterial(Array<WavefrontObjFile::Material>& materi
     return Result::ok();
 }
 
-WavefrontObjFile::Index WavefrontObjFile::IndexMap::getIndexFor(TripleIndex i, Mesh& newMesh,
-                                                                const Mesh& srcMesh)
+WavefrontObjFile::Index WavefrontObjFile::IndexMap::getIndexFor(TripleIndex i, Mesh& newMesh, const Mesh& srcMesh)
 {
     const std::map<TripleIndex, Index>::iterator it(map.find(i));
 

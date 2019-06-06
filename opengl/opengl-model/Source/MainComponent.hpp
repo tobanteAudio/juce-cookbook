@@ -31,9 +31,6 @@ public:
     void createShaders();
 
 private:
-    String vertexShader;
-    String fragmentShader;
-
     std::unique_ptr<OpenGLShaderProgram> m_shader;
     std::unique_ptr<Shape> m_shape;
     std::unique_ptr<Attributes> m_attributes;

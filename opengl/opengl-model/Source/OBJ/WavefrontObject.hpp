@@ -162,13 +162,12 @@ private:
 
         static String::CharPointerType findEndOfFaceToken(String::CharPointerType t) noexcept
         {
-            return CharacterFunctions::findEndOfToken(t, CharPointer_ASCII("/ \t"),
-                                                      String().getCharPointer());
+            return CharacterFunctions::findEndOfToken(t, CharPointer_ASCII("/ \t"), String().getCharPointer());
         }
     };
 
-    static Shape* parseFaceGroup(const Mesh& srcMesh, Array<Face>& faceGroup,
-                                 const Material& material, const String& name);
+    static Shape* parseFaceGroup(const Mesh& srcMesh, Array<Face>& faceGroup, const Material& material,
+                                 const String& name);
 
     Result parseObjFile(const StringArray& lines);
 

@@ -16,6 +16,8 @@
       </GROUP>
       <GROUP id="{1D567331-0756-5639-EBB1-2D5A858F9018}" name="GL">
         <FILE id="ckLEiy" name="Attributes.hpp" compile="0" resource="0" file="Source/GL/Attributes.hpp"/>
+        <FILE id="udLINu" name="ShaderSource.hpp" compile="0" resource="0"
+              file="Source/GL/ShaderSource.hpp"/>
         <FILE id="dPesqL" name="Uniforms.hpp" compile="0" resource="0" file="Source/GL/Uniforms.hpp"/>
         <FILE id="AOAndb" name="Vertex.hpp" compile="0" resource="0" file="Source/GL/Vertex.hpp"/>
       </GROUP>

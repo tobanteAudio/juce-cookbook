@@ -2,8 +2,7 @@
 
 namespace tobanteAudio
 {
-Shader::Shader(OpenGLContext& context, const char* vertexSource, const char* fragmentSource)
-    : openGLContext(context)
+Shader::Shader(OpenGLContext& context, const char* vertexSource, const char* fragmentSource) : openGLContext(context)
 {
     // Vertex
     unsigned int vertex;
@@ -38,26 +37,22 @@ unsigned int Shader::getID() { return m_id; }
 
 void Shader::setBool(const std::string& name, bool value) const
 {
-    openGLContext.extensions.glUniform1i(
-        openGLContext.extensions.glGetUniformLocation(m_id, name.c_str()), (int)value);
+    openGLContext.extensions.glUniform1i(openGLContext.extensions.glGetUniformLocation(m_id, name.c_str()), (int)value);
 }
 
 void Shader::setInt(const std::string& name, int value) const
 {
-    openGLContext.extensions.glUniform1i(
-        openGLContext.extensions.glGetUniformLocation(m_id, name.c_str()), value);
+    openGLContext.extensions.glUniform1i(openGLContext.extensions.glGetUniformLocation(m_id, name.c_str()), value);
 }
 
 void Shader::setFloat(const std::string& name, float value) const
 {
-    openGLContext.extensions.glUniform1f(
-        openGLContext.extensions.glGetUniformLocation(m_id, name.c_str()), value);
+    openGLContext.extensions.glUniform1f(openGLContext.extensions.glGetUniformLocation(m_id, name.c_str()), value);
 }
 
 void Shader::setFloat4(const std::string& name, float r, float g, float b, float a) const
 {
-    openGLContext.extensions.glUniform4f(
-        openGLContext.extensions.glGetUniformLocation(m_id, name.c_str()), r, g, b, a);
+    openGLContext.extensions.glUniform4f(openGLContext.extensions.glGetUniformLocation(m_id, name.c_str()), r, g, b, a);
 }
 
 void Shader::checkCompileErrors(unsigned int shader_id, std::string type)
