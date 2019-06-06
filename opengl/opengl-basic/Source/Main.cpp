@@ -9,7 +9,7 @@
 */
 
 #include "../JuceLibraryCode/JuceHeader.h"
-#include "MainComponent.h"
+#include "MainComponent.hpp"
 
 //==============================================================================
 class basicopenglApplication : public JUCEApplication

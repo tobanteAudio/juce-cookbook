@@ -1,4 +1,4 @@
-#include "MainComponent.h"
+#include "MainComponent.hpp"
 
 //==============================================================================
 MainComponent::MainComponent()
@@ -33,7 +33,7 @@ void MainComponent::render()
     OpenGLHelpers::clear(Colours::green);
 
     // Points in 3D space
-    GLfloat verts[] {-1.0f, -1.0f, 0.0f, 1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f};
+    GLfloat verts[]{-1.0f, -1.0f, 0.0f, 1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f};
 
     // An ID for your buffer
     GLuint bufferID;
