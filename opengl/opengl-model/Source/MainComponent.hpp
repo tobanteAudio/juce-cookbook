@@ -36,5 +36,20 @@ private:
     std::unique_ptr<Attributes> m_attributes;
     std::unique_ptr<Uniforms> m_uniforms;
 
+    Slider m_XPosition;
+    Slider m_YPosition;
+    Slider m_ZPosition;
+    Slider m_zoomView;
+    Slider m_XRotation;
+    Slider m_YRotation;
+    Slider m_ZRotation;
+
+    Label m_XPositionLabel;
+    Label m_YPositionLabel;
+    Label m_ZPositionLabel;
+    Label m_zoomLabel;
+    Label m_XRotationLabel;
+    Label m_YRotationLabel;
+    Label m_ZRotationLabel;
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(MainComponent)
 };
