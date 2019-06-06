@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="Amrf3h" name="basic-opengl" projectType="guiapp" jucerVersion="5.4.3">
-  <MAINGROUP id="QstgHE" name="basic-opengl">
+<JUCERPROJECT id="Amrf3h" name="opengl-basic" projectType="guiapp" jucerVersion="5.4.3">
+  <MAINGROUP id="QstgHE" name="opengl-basic">
     <GROUP id="{808FA82E-AC2F-EBB4-AD3D-954E3D74B205}" name="Source">
       <FILE id="i7lfJJ" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
-      <FILE id="eH1cgS" name="MainComponent.cpp" compile="1" resource="0"
-            file="Source/MainComponent.cpp"/>
+      <FILE id="eH1cgS" name="MainComponent.cpp" compile="1" resource="0" file="Source/MainComponent.cpp"/>
       <FILE id="ZEUI2T" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
     </GROUP>
   </MAINGROUP>
