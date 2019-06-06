@@ -50,28 +50,30 @@ void MainComponent::render()
     glViewport(0, 0, roundToInt(desktopScale * getWidth()), roundToInt(desktopScale * getHeight()));
 
     // UPLOAD DATA
+    // 3x positions         // 3x colors
     GLfloat vertices[] = {
-        // positions         // colors
         0.5f,  -0.5f, 0.0f, 1.0f, 0.0f, 0.0f,  // bottom right
         -0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f,  // bottom left
         0.0f,  0.5f,  0.0f, 0.0f, 0.0f, 1.0f   // top
     };
 
+    // IDs
+    GLuint VAO, VBO;
 
     {
         void* glGenVertexArraysPtr = OpenGLHelpers::getExtensionFunction("glGenVertexArrays");
         typedef void (*func_type)(GLsizei n, const GLuint* arrays);
-        ((func_type)glGenVertexArraysPtr)(1, &m_vertexArrayObject);
+        ((func_type)glGenVertexArraysPtr)(1, &VAO);
     }
 
-    unsigned int VBO;
     GL.glGenBuffers(1, &VBO);
+
     {
         // Bind the Vertex Array Object first, then bind and set vertex buffer(s),
         // and then configure vertex attributes(s).
         void* ptr = OpenGLHelpers::getExtensionFunction("glBindVertexArray");
         typedef void (*func_type)(GLuint array);
-        ((func_type)ptr)(m_vertexArrayObject);
+        ((func_type)ptr)(VAO);
     }
 
     GL.glBindBuffer(GL_ARRAY_BUFFER, VBO);
@@ -94,17 +96,17 @@ void MainComponent::render()
     m_shader->use();
 
     // CHANGING COLOR
-    m_counter += 0.02f;
-    const float timeValue  = static_cast<float>(m_counter);
-    const float greenValue = sin(timeValue) / 2.0f + 0.5f;
-    const float redValue   = sin(timeValue) / 4.0f + 0.25f;
-    m_shader->setFloat4("ourColor", greenValue, -redValue, redValue, 1.0f);
+    const auto frames      = getFrameCounter();
+    const float greenValue = std::sin(frames * 0.02f);
+    const float redValue   = std::sin(frames * 0.01f);
+    const float blueValue  = std::sin(frames * 0.005f);
+    m_shader->setFloat4("ourColor", greenValue, redValue, blueValue, 1.0f);
 
     // BIND VERTEX ARRAY
     {
         void* ptr3 = OpenGLHelpers::getExtensionFunction("glBindVertexArray");
         typedef void (*func_type_2)(GLuint array);
-        ((func_type_2)ptr3)(m_vertexArrayObject);
+        ((func_type_2)ptr3)(VAO);
     }
 
     // FINALLY, DRAW!
@@ -114,12 +116,11 @@ void MainComponent::render()
 //==============================================================================
 void MainComponent::paint(Graphics& g)
 {
-	// Draw the current GLSL version
+    // Draw the current GLSL version
     auto str = "GLSL: v" + String(OpenGLShaderProgram::getLanguageVersion(), 2);
     g.setColour(getLookAndFeel().findColour(Label::textColourId));
     g.setFont(20);
     g.drawText(str, 25, 20, 300, 30, Justification::left);
-
 }
 
 void MainComponent::resized() {}
