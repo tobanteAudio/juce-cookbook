@@ -5,7 +5,6 @@ MainComponent::MainComponent()
 {
     // Make sure you set the size of the component after
     // you add any child components.
-    setName("tobanteAudio: Basic OpenGL");
     setSize(1280, 720);
     openGLContext.setOpenGLVersionRequired(juce::OpenGLContext::openGL3_2);
     openGLContext.setContinuousRepainting(true);
@@ -53,14 +52,9 @@ void MainComponent::render()
 
     openGLContext.extensions.glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0,
                                                    nullptr);
-    // openGLContext.extensions.
-
     // Draw three verticies
     glDrawArrays(GL_TRIANGLES, 0, 3);
-
     openGLContext.extensions.glDisableVertexAttribArray(0);
-
-    // Add your rendering code here...
 }
 
 //==============================================================================
