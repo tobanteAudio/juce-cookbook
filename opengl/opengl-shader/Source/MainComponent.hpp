@@ -27,6 +27,6 @@ public:
 private:
     //==============================================================================
     std::unique_ptr<tobanteAudio::Shader> m_shader;
-    
+
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(MainComponent)
 };
