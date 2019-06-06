@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="UaPH4f" name="basic-animation" projectType="audioplug" jucerVersion="5.4.3"
+<JUCERPROJECT id="UaPH4f" name="animation" projectType="audioplug" jucerVersion="5.4.3"
               version="0.1.0" companyName="tobanteAudio" companyWebsite="https://github.com/tobanteAudio"
               companyEmail="tobanteAudio@gmail.com" reportAppUsage="0" cppLanguageStandard="17">
-  <MAINGROUP id="WSDw0M" name="basic-animation">
+  <MAINGROUP id="WSDw0M" name="animation">
     <GROUP id="{2F3FF688-9988-C4DD-A512-173D26222947}" name="Source">
       <FILE id="CLOSkw" name="ExampleComponent.cpp" compile="1" resource="0"
             file="Source/ExampleComponent.cpp"/>
-      <FILE id="fG1Hey" name="ExampleComponent.h" compile="0" resource="0"
-            file="Source/ExampleComponent.h"/>
+      <FILE id="fG1Hey" name="ExampleComponent.hpp" compile="0" resource="0"
+            file="Source/ExampleComponent.hpp"/>
       <FILE id="HdiN5n" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
-      <FILE id="TC7vlz" name="PluginProcessor.h" compile="0" resource="0"
-            file="Source/PluginProcessor.h"/>
+      <FILE id="TC7vlz" name="PluginProcessor.hpp" compile="0" resource="0"
+            file="Source/PluginProcessor.hpp"/>
       <FILE id="AZy69n" name="PluginEditor.cpp" compile="1" resource="0"
             file="Source/PluginEditor.cpp"/>
-      <FILE id="S3lJ64" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="S3lJ64" name="PluginEditor.hpp" compile="0" resource="0"
+            file="Source/PluginEditor.hpp"/>
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>
@@ -41,6 +42,50 @@
         <MODULEPATH id="juce_opengl" path="../../../../lib/JUCE/modules"/>
       </MODULEPATHS>
     </VS2017>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_opengl"/>
+        <MODULEPATH id="juce_gui_extra"/>
+        <MODULEPATH id="juce_gui_basics"/>
+        <MODULEPATH id="juce_graphics"/>
+        <MODULEPATH id="juce_events"/>
+        <MODULEPATH id="juce_data_structures"/>
+        <MODULEPATH id="juce_cryptography"/>
+        <MODULEPATH id="juce_core"/>
+        <MODULEPATH id="juce_audio_utils"/>
+        <MODULEPATH id="juce_audio_processors"/>
+        <MODULEPATH id="juce_audio_plugin_client"/>
+        <MODULEPATH id="juce_audio_formats"/>
+        <MODULEPATH id="juce_audio_devices"/>
+        <MODULEPATH id="juce_audio_basics"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_opengl"/>
+        <MODULEPATH id="juce_gui_extra"/>
+        <MODULEPATH id="juce_gui_basics"/>
+        <MODULEPATH id="juce_graphics"/>
+        <MODULEPATH id="juce_events"/>
+        <MODULEPATH id="juce_data_structures"/>
+        <MODULEPATH id="juce_cryptography"/>
+        <MODULEPATH id="juce_core"/>
+        <MODULEPATH id="juce_audio_utils"/>
+        <MODULEPATH id="juce_audio_processors"/>
+        <MODULEPATH id="juce_audio_plugin_client"/>
+        <MODULEPATH id="juce_audio_formats"/>
+        <MODULEPATH id="juce_audio_devices"/>
+        <MODULEPATH id="juce_audio_basics"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
   </EXPORTFORMATS>
   <MODULES>
     <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
