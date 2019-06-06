@@ -6,6 +6,10 @@ PDF_SOURCE = README.md
 PDF_NAME = tobanteAudio-JUCE-Cookbook.pdf
 PDF_OUTPUT_DIR = dist
 
+# JUCE generated
+BUILD_DIR = Builds
+LIBRARY_DIR = JuceLibraryCode
+
 # Animation
 ANIMATION_PATH = animation
 
@@ -20,10 +24,16 @@ pdf:
 
 clean:
 	@rm -rf $(PDF_OUTPUT_DIR)
-	@rm -rf $(ANIMATION_PATH)/Builds
-	@rm -rf $(GL_BASIC_PATH)/Builds
-	@rm -rf $(GL_SHADER_PATH)/Builds
-	@rm -rf $(GL_MODEL_PATH)/Builds
+
+	@rm -rf $(ANIMATION_PATH)/$(BUILD_DIR)
+	@rm -rf $(GL_BASIC_PATH)/$(BUILD_DIR)
+	@rm -rf $(GL_SHADER_PATH)/$(BUILD_DIR)
+	@rm -rf $(GL_MODEL_PATH)/$(BUILD_DIR)
+
+	@rm -rf $(ANIMATION_PATH)/$(LIBRARY_DIR)
+	@rm -rf $(GL_BASIC_PATH)/$(LIBRARY_DIR)
+	@rm -rf $(GL_SHADER_PATH)/$(LIBRARY_DIR)
+	@rm -rf $(GL_MODEL_PATH)/$(LIBRARY_DIR)
 
 stats:
 	@cloc README.md $(ANIMATION_PATH) $(GL_BASIC_PATH) $(GL_SHADER_PATH) $(GL_MODEL_PATH)
