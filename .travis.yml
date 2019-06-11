@@ -17,6 +17,7 @@ matrix:
       deploy:
         provider: releases
         api_key: $GITHUB_TOKEN
+        name: Build $(date +'%d.%m.%Y %R')
         file: $TRAVIS_BUILD_DIR/dist/tobanteAudio-JUCE-Cookbook.pdf
         skip_cleanup: true
         on:
