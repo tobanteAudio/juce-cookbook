@@ -12,6 +12,7 @@ matrix:
   include:
     - os: linux
       language: node_js
+      node_js: "10"
       script: *script-pdf
       deploy:
         provider: releases
