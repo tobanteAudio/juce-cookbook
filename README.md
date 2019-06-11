@@ -85,18 +85,35 @@ If you want to add examples or resources to this collection you can eather push 
 
 ## How to run examples
 
-- Windows
-- Mac
-- Linux
+All of the example projects included in this repository are normal `Projucer` projects, so running them is the same as any other project created with the `Projucer`
+
+- Download JUCE
+- Build the Projucer
+
+### Windows & macOS
+
+- Open example projects `.jucer` file & save to generate the build files
+- Open the project in your IDE (Visual Studio / XCode)
+- Build
+
+### Linux
+
+```sh
+cd $PROJECT_ROOT
+Projucer --resave $PROJECT_NAME.jucer
+cd Builds/LinuxMakefile
+make config=[Release, Debug] -j8
+```
 
 ## Why JUCE
 
 ### Features
 
-- Cross platform
-- Collection of GUI widgets
-- Easially customizable
-- Solves common application problems (File IO, Network & Undo)
+Long story short, JUCE is a library which solves many common problems a developer might face during the creation of any kind of application.
+It hides away a lot of complexity, which normally is not very fun to work with. This includes cross platform window creation, file I/O, networking and so on.
+JUCE also comes with a collection of user interface widgets, such as buttons, combo boxes, menus, tabbed views and many more. A complete list can be found
+in the [JUCE documentation](https://docs.juce.com/master/index.html#tag_gui). `Components` as they are called in JUCE form the basis of all user interaction in a JUCE application.
+The appearance is easily customizable. If the ones provided by JUCE don't fit your needs you can also create your own, just create subclass from the `Compoent` you want to customize and of you go.
 
 #### Audio
 
