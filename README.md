@@ -341,6 +341,8 @@ If you are already pretty good in the language and have a basic understanding of
 ## OpenGL
 
 - Text for 3 examples
+- How to use GLEW
+  - If not, how to get function pointers using `openglcontext.extensions`.
 
 ## 3rd Party Modules
 
