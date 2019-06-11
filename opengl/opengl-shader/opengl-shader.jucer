@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="cWwBHt" name="opengl-shader" projectType="guiapp" jucerVersion="5.4.3">
+<JUCERPROJECT id="cWwBHt" name="opengl-shader" projectType="guiapp" jucerVersion="5.4.3"
+              cppLanguageStandard="17" defines="GLEW_STATIC=1" headerPath="C:\Dev\tobanteAudio\projects\juce-cookbook\opengl\opengl-shader\Source\glew">
   <MAINGROUP id="XMoDz3" name="opengl-shader">
     <GROUP id="{126C3362-7033-21FA-6ECA-2C2A3CE85CA2}" name="Source">
+      <GROUP id="{929AA3DE-FFEF-4ED0-7E34-A75A06A26C2E}" name="core">
+        <FILE id="nqr8mt" name="common.hpp" compile="0" resource="0" file="Source/core/common.hpp"/>
+      </GROUP>
+      <GROUP id="{3E74504F-938B-D79E-7DED-DEC66783AD53}" name="glfw">
+        <GROUP id="{31A2377A-FC72-8EC4-DF96-CE0BFA70BA6D}" name="GL">
+          <FILE id="Mh81Iq" name="eglew.h" compile="0" resource="0" file="Source/glew/GL/eglew.h"/>
+          <FILE id="Hkz2Qm" name="glew.c" compile="1" resource="0" file="Source/glew/GL/glew.c"/>
+          <FILE id="KWS4W9" name="glew.h" compile="0" resource="0" file="Source/glew/GL/glew.h"/>
+          <FILE id="N41bdO" name="glxew.h" compile="0" resource="0" file="Source/glew/GL/glxew.h"/>
+          <FILE id="gufKno" name="wglew.h" compile="0" resource="0" file="Source/glew/GL/wglew.h"/>
+        </GROUP>
+      </GROUP>
       <FILE id="Aqbt2B" name="Shader_Source.hpp" compile="0" resource="0"
             file="Source/Shader_Source.hpp"/>
       <FILE id="y4WLk1" name="Shader.cpp" compile="1" resource="0" file="Source/Shader.cpp"/>

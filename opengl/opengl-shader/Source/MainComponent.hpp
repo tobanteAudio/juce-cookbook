@@ -1,6 +1,7 @@
 #pragma once
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include "core/common.hpp"
+
 #include "Shader.hpp"
 
 //==============================================================================

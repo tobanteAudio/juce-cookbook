@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include "core/common.hpp"
 
 namespace tobanteAudio
 {
@@ -18,7 +18,7 @@ public:
      *
      * Takes sources for a vertex & fragment shader
      */
-    Shader(OpenGLContext& context, const char* vertexSource, const char* fragmentSource);
+    Shader(const char* vertexSource, const char* fragmentSource);
 
     /**
      * @brief Activates the shader
@@ -52,9 +52,6 @@ public:
 
 private:
     void checkCompileErrors(unsigned int shader_id, std::string type);
-
-private:
-    OpenGLContext& openGLContext;
 };
 
 }  // namespace tobanteAudio
