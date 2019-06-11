@@ -128,18 +128,28 @@ The appearance is easily customizable. If the ones provided by JUCE don't fit yo
 
 ## Other libraries
 
-### Qt
+Of course JUCE is not the only library that helps you build desktop & mobile applications. There are a lot of open source frameworks & libraries that try to achieve similar goals.
 
-- Not really intended for realtime audio
-- To big
-- expensive
+The following list is definitely not complete, but should give you a good overview on what is available in the C++ ecosystem.
+
+### QT
+
+If you have been programming with C++ for a while, you probably heard of Qt. It's been around since the mid 90's and is currently being developed by The Qt Company.
+
+The goal of Qt is to do it all. It runs on almost every platform including BSDs and embedded platforms. Because of this the whole framework is huge. While JUCE is around a couple of hundred megabytes, Qt is more in the range of a couple gigabytes.
+
+Qt is also not really designed to help you write audio applications. There is no easy way to wrap a Qt application in an AudioUnit or VST plugin for example.
+
+If your goal is to write a desktop application in the style of Gimp, FreeCAD or Blender and you need a lot of premade desktop widgets, Qt probably the way to go.
+
+Qt is free for open source projects, but a license for closed source application can become pretty expensive.
 
 ### SFML
 
 - very simple
 - intended for games
 
-### imgui
+### IMGUI
 
 - very simple
 - intended for simple widgets
@@ -166,11 +176,11 @@ If you like to learn using videos, you should be able to go from beginner to adv
 
 #### ADC Talks
 
-The JUCE team has their own [Youtube channel](https://www.youtube.com/channel/UCaF6fKdDrSmPDmiZcl9KLnQ/videos), where yo can find all of the talks from the yearly `Audio Developer Confrence (ADC)`. The content goes from general audio development to JUCE basics to advanced, companies showing of their workflow using JUCE and much more. I will link to specific talks in later sections.
+The JUCE team has their own [YouTube channel](https://www.youtube.com/channel/UCaF6fKdDrSmPDmiZcl9KLnQ/videos), where yo can find all of the talks from the yearly `Audio Developer Confrence (ADC)`. The content goes from general audio development to JUCE basics to advanced, companies showing of their workflow using JUCE and much more. I will link to specific talks in later sections.
 
 #### The Audio Programmer
 
-The Audio Programmer is a YouTube channel which almost only does JUCE related development tutorials. He has videos the basics on getting up & running with the library, the basics on `Components`, an introduction to audio plugin development and interviews with people working in the audio developer industry. Each video is 20-60min long.
+The Audio Programmer is a YouTube channel which almost only does JUCE related development tutorials. He has videos for the basics on getting up & running with the library, introduction to `Components`, an introduction to audio plugin development and interviews with people working in the audio developer industry. Each video is `~20-60min` long.
 
 If you are new to C++ and audio this is a create place to start.
 
@@ -248,7 +258,7 @@ If you are already pretty good in the language and have a basic understanding of
 ### Project Documentation
 
 - comments
-- Github Pages
+- GitHub Pages
 - Doxygen
 - readthedocs
 
@@ -329,7 +339,7 @@ If you are already pretty good in the language and have a basic understanding of
 
 ## Publish
 
-- Github releases
+- GitHub releases
 - zip
 - installer/package
 
@@ -351,5 +361,5 @@ If you are already pretty good in the language and have a basic understanding of
 ## Related resources
 
 - Faust
-  - Youtube
+  - YouTube
 - std::audio
