@@ -20,25 +20,24 @@
       <GROUP id="{54670083-2B80-18D9-BEEF-868689AB0FDB}" name="core">
         <FILE id="t0vu6J" name="common.hpp" compile="0" resource="0" file="Source/core/common.hpp"/>
       </GROUP>
-      <GROUP id="{3E7B9257-30EC-E2C4-F30F-4129E8D3125B}" name="OBJ">
-        <FILE id="cjXWiY" name="Shape.hpp" compile="0" resource="0" file="Source/OBJ/Shape.hpp"/>
-        <FILE id="yYH8Dz" name="WavefrontObject.cpp" compile="1" resource="0"
-              file="Source/OBJ/WavefrontObject.cpp"/>
-        <FILE id="nABQB2" name="WavefrontObject.hpp" compile="0" resource="0"
-              file="Source/OBJ/WavefrontObject.hpp"/>
+      <GROUP id="{3E7B9257-30EC-E2C4-F30F-4129E8D3125B}" name="obj">
+        <FILE id="cjXWiY" name="shape.hpp" compile="0" resource="0" file="Source/obj/shape.hpp"/>
+        <FILE id="yYH8Dz" name="wavefront_object.cpp" compile="1" resource="0"
+              file="Source/obj/wavefront_object.cpp"/>
+        <FILE id="nABQB2" name="wavefront_object.hpp" compile="0" resource="0"
+              file="Source/obj/wavefront_object.hpp"/>
       </GROUP>
-      <GROUP id="{1D567331-0756-5639-EBB1-2D5A858F9018}" name="GL">
-        <FILE id="ckLEiy" name="Attributes.hpp" compile="0" resource="0" file="Source/GL/Attributes.hpp"/>
-        <FILE id="udLINu" name="ShaderSource.hpp" compile="0" resource="0"
-              file="Source/GL/ShaderSource.hpp"/>
-        <FILE id="dPesqL" name="Uniforms.hpp" compile="0" resource="0" file="Source/GL/Uniforms.hpp"/>
-        <FILE id="AOAndb" name="Vertex.hpp" compile="0" resource="0" file="Source/GL/Vertex.hpp"/>
+      <GROUP id="{1D567331-0756-5639-EBB1-2D5A858F9018}" name="opengl">
+        <FILE id="ckLEiy" name="attributes.hpp" compile="0" resource="0" file="Source/opengl/attributes.hpp"/>
+        <FILE id="udLINu" name="shader_source.hpp" compile="0" resource="0"
+              file="Source/opengl/shader_source.hpp"/>
+        <FILE id="dPesqL" name="uniforms.hpp" compile="0" resource="0" file="Source/opengl/uniforms.hpp"/>
       </GROUP>
-      <FILE id="o2agEj" name="MainComponent.hpp" compile="0" resource="0"
-            file="Source/MainComponent.hpp"/>
-      <FILE id="C0MSFA" name="MainComponent.cpp" compile="1" resource="0"
-            file="Source/MainComponent.cpp"/>
-      <FILE id="guQEIe" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="o2agEj" name="main_component.hpp" compile="0" resource="0"
+            file="Source/main_component.hpp"/>
+      <FILE id="C0MSFA" name="main_component.cpp" compile="1" resource="0"
+            file="Source/main_component.cpp"/>
+      <FILE id="guQEIe" name="main.cpp" compile="1" resource="0" file="Source/main.cpp"/>
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>

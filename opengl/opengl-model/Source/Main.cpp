@@ -1,4 +1,4 @@
-#include "MainComponent.hpp"
+#include "main_component.hpp"
 
 //==============================================================================
 class openglmodelApplication : public JUCEApplication

@@ -1,4 +1,4 @@
-#include "WavefrontObject.hpp"
+#include "wavefront_object.hpp"
 
 WavefrontObjFile::WavefrontObjFile() {}
 

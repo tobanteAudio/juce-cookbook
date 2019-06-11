@@ -1,5 +1,6 @@
-#include "MainComponent.hpp"
-#include "GL/ShaderSource.hpp"
+#include "main_component.hpp"
+
+#include "opengl/shader_source.hpp"
 
 MainComponent::MainComponent()
     : m_XPosition(Slider::LinearHorizontal, Slider::TextBoxBelow)
@@ -228,7 +229,7 @@ void MainComponent::createShaders()
 
         m_shape.reset(new Shape());
         m_attributes.reset(new Attributes(*m_shader));
-        m_uniforms.reset(new Uniforms(openGLContext, *m_shader));
+        m_uniforms.reset(new Uniforms(*m_shader));
 
         statusText = "GLSL: v" + String(OpenGLShaderProgram::getLanguageVersion(), 2);
     }

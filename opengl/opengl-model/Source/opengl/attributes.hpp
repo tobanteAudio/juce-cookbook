@@ -3,7 +3,13 @@
 
 #include "core/common.hpp"
 
-#include "Vertex.hpp"
+struct Vertex
+{
+    float position[3];
+    float normal[3];
+    float colour[4];
+    float texCoord[2];
+};
 
 // This class just manages the attributes that the shaders use.
 struct Attributes

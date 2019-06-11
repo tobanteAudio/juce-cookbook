@@ -1,9 +1,8 @@
 #pragma once
 
 #include "core/common.hpp"
-
-#include "GL/Vertex.hpp"
-#include "WavefrontObject.hpp"
+#include "opengl/attributes.hpp"
+#include "wavefront_object.hpp"
 
 /**
  * @brief This loads a 3D model #include "../OBJ/WavefrontObject.hpp"
@@ -83,8 +82,8 @@ private:
     static void createVertexListFromMesh(const WavefrontObjFile::Mesh& mesh, Array<Vertex>& list, Colour colour)
     {
         auto scale = 0.2f;
-        WavefrontObjFile::TextureCoord defaultTexCoord {0.5f, 0.5f};
-        WavefrontObjFile::Vertex defaultNormal {0.5f, 0.5f, 0.5f};
+        WavefrontObjFile::TextureCoord defaultTexCoord{0.5f, 0.5f};
+        WavefrontObjFile::Vertex defaultNormal{0.5f, 0.5f, 0.5f};
 
         for (auto i = 0; i < mesh.vertices.size(); ++i)
         {

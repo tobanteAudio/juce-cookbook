@@ -2,12 +2,11 @@
 
 #include "core/common.hpp"
 
-#include "GL/Attributes.hpp"
-#include "GL/Uniforms.hpp"
-#include "GL/Vertex.hpp"
+#include "opengl/attributes.hpp"
+#include "opengl/uniforms.hpp"
 
-#include "OBJ/Shape.hpp"
-#include "OBJ/WavefrontObject.hpp"
+#include "obj/shape.hpp"
+#include "obj/wavefront_object.hpp"
 
 /*
  * @brief This component lives inside our window, and this is where you should put all
