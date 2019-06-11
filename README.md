@@ -1,6 +1,6 @@
 # JUCE Cookbook
 
-**WORK IN PROGRESS**
+**WARNING: WORK IN PROGRESS. SOME SECTION MIGHT NOT HAVE ANY CONTENT OR ONLY A LIST WITH KEYWORDS FOR ME AS A TODO LIST.**
 
 A collection of examples & workflow tips related to the C++ libary JUCE.
 
