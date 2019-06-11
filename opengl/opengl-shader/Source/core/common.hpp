@@ -1,6 +1,5 @@
 #pragma once
 
-
 // OPENGL
 #include <GL/glew.h>
 
