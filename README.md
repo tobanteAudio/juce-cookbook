@@ -4,6 +4,10 @@
 
 A collection of examples & workflow tips related to the C++ library JUCE.
 
+[**Latest PDF**](https://github.com/tobanteAudio/juce-cookbook/releases/latest)
+
+[**GitHub Repository**](https://github.com/tobanteAudio/juce-cookbook/releases/latest)
+
 ## Content
 
 - [Intro](#intro)
