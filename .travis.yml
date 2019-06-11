@@ -1,4 +1,3 @@
-language: node_js
 branches:
   only:
     - master
@@ -6,12 +5,13 @@ branches:
 script-anchors:
   - &script-pdf
     - cd $TRAVIS_BUILD_DIR
-    - yarn add mdpdf
+    - npm install mdpdf
     - make
 
 matrix:
   include:
-    - os: osx
+    - os: linux
+      language: node_js
       script: *script-pdf
       deploy:
         provider: releases
