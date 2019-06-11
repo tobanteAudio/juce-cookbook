@@ -1,4 +1,6 @@
-# JUCE - Cookbook
+# JUCE Cookbook
+
+**WORK IN PROGRESS**
 
 A collection of examples & workflow tips related to the C++ libary JUCE.
 
