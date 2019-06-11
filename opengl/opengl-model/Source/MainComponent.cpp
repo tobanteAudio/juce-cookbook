@@ -105,7 +105,7 @@ void MainComponent::render()
         m_uniforms->viewMatrix->setMatrix4(getViewMatrix().mat, 1, false);
     }
 
-    m_shape->draw(openGLContext, *m_attributes);
+    m_shape->draw(*m_attributes);
 
     // Reset the element buffers so child Components draw correctly
     glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -226,8 +226,8 @@ void MainComponent::createShaders()
         m_shader.reset(newShader.release());
         m_shader->use();
 
-        m_shape.reset(new Shape(openGLContext));
-        m_attributes.reset(new Attributes(openGLContext, *m_shader));
+        m_shape.reset(new Shape());
+        m_attributes.reset(new Attributes(*m_shader));
         m_uniforms.reset(new Uniforms(openGLContext, *m_shader));
 
         statusText = "GLSL: v" + String(OpenGLShaderProgram::getLanguageVersion(), 2);

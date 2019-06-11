@@ -12,33 +12,33 @@
  */
 struct Shape
 {
-    Shape(OpenGLContext& openGLContext)
+    Shape()
     {
         if (shapeFile.load(String(BinaryData::teapot_obj)).wasOk())
         {
             for (auto* s : shapeFile.shapes)
             {
-                vertexBuffers.add(new VertexBuffer(openGLContext, *s));
+                vertexBuffers.add(new VertexBuffer(*s));
             }
         }
     }
 
-    void draw(OpenGLContext& context, Attributes& glAttributes)
+    void draw(Attributes& glAttributes)
     {
         for (auto* vertexBuffer : vertexBuffers)
         {
             vertexBuffer->bind();
 
-            glAttributes.enable(context);
+            glAttributes.enable();
             glDrawElements(GL_TRIANGLES, vertexBuffer->numIndices, GL_UNSIGNED_INT, 0);
-            glAttributes.disable(context);
+            glAttributes.disable();
         }
     }
 
 private:
     struct VertexBuffer
     {
-        VertexBuffer(OpenGLContext& context, WavefrontObjFile::Shape& aShape) : openGLContext(context)
+        VertexBuffer(WavefrontObjFile::Shape& aShape)
         {
             numIndices = aShape.mesh.indices.size();
 
@@ -73,7 +73,6 @@ private:
 
         GLuint vertexBuffer, indexBuffer;
         int numIndices;
-        OpenGLContext& openGLContext;
 
         JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(VertexBuffer)
     };
@@ -84,8 +83,8 @@ private:
     static void createVertexListFromMesh(const WavefrontObjFile::Mesh& mesh, Array<Vertex>& list, Colour colour)
     {
         auto scale = 0.2f;
-        WavefrontObjFile::TextureCoord defaultTexCoord{0.5f, 0.5f};
-        WavefrontObjFile::Vertex defaultNormal{0.5f, 0.5f, 0.5f};
+        WavefrontObjFile::TextureCoord defaultTexCoord {0.5f, 0.5f};
+        WavefrontObjFile::Vertex defaultNormal {0.5f, 0.5f, 0.5f};
 
         for (auto i = 0; i < mesh.vertices.size(); ++i)
         {

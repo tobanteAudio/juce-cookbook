@@ -4,7 +4,6 @@
 
 #include "../core/common.hpp"
 
-
 //==============================================================================
 /**
     This is a quick-and-dirty parser for the 3D OBJ file format.
