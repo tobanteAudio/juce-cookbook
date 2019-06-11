@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="L5PoR8" name="opengl-model" projectType="guiapp" jucerVersion="5.4.3">
+<JUCERPROJECT id="L5PoR8" name="opengl-model" projectType="guiapp" jucerVersion="5.4.3"
+              defines="GLEW_STATIC=1" headerPath="C:\Dev\tobanteAudio\projects\juce-cookbook\opengl\opengl-model\Source\glew">
   <MAINGROUP id="f4yIXe" name="opengl-model">
     <GROUP id="{D4FB0A22-98AA-A337-F92F-FD6AA8727E9B}" name="Resources">
       <FILE id="WwNYfa" name="box_stack.obj" compile="0" resource="1" file="Resources/box_stack.obj"/>
       <FILE id="GIIhZd" name="teapot.obj" compile="0" resource="1" file="Resources/teapot.obj"/>
     </GROUP>
     <GROUP id="{97B4BF9D-673D-5425-0BA6-9BC487730583}" name="Source">
+      <GROUP id="{9F691D0D-D727-3517-A3E9-DF03908AE8BF}" name="glew">
+        <GROUP id="{D984E734-0AF5-93C7-6B03-2420E5A82B63}" name="GL">
+          <FILE id="SLO1bl" name="eglew.h" compile="0" resource="0" file="Source/glew/GL/eglew.h"/>
+          <FILE id="bbyUJs" name="glew.c" compile="1" resource="0" file="Source/glew/GL/glew.c"/>
+          <FILE id="AMMLMS" name="glew.h" compile="0" resource="0" file="Source/glew/GL/glew.h"/>
+          <FILE id="ZnttU4" name="glxew.h" compile="0" resource="0" file="Source/glew/GL/glxew.h"/>
+          <FILE id="LOM9sY" name="wglew.h" compile="0" resource="0" file="Source/glew/GL/wglew.h"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{54670083-2B80-18D9-BEEF-868689AB0FDB}" name="core">
+        <FILE id="t0vu6J" name="common.hpp" compile="0" resource="0" file="Source/core/common.hpp"/>
+      </GROUP>
       <GROUP id="{3E7B9257-30EC-E2C4-F30F-4129E8D3125B}" name="OBJ">
         <FILE id="cjXWiY" name="Shape.hpp" compile="0" resource="0" file="Source/OBJ/Shape.hpp"/>
         <FILE id="yYH8Dz" name="WavefrontObject.cpp" compile="1" resource="0"

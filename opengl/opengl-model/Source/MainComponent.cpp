@@ -17,7 +17,7 @@ MainComponent::MainComponent()
     , m_YRotationLabel("rotation_y", "Rotation: Y")
     , m_ZRotationLabel("rotation_z", "Rotation: Z")
 {
-    setSize(1280, 720);
+    setSize(1600, 900);
     openGLContext.setContinuousRepainting(true);
 
     // Sliders
@@ -61,7 +61,17 @@ MainComponent::MainComponent()
 
 MainComponent::~MainComponent() { shutdownOpenGL(); }
 
-void MainComponent::initialise() { createShaders(); }
+void MainComponent::initialise()
+{
+    // Glew
+    if (glewInit() != GLEW_OK)
+    {
+        DBG("Error in glew init");
+    }
+
+    // Shaders
+    createShaders();
+}
 
 void MainComponent::shutdown()
 {
@@ -98,8 +108,8 @@ void MainComponent::render()
     m_shape->draw(openGLContext, *m_attributes);
 
     // Reset the element buffers so child Components draw correctly
-    openGLContext.extensions.glBindBuffer(GL_ARRAY_BUFFER, 0);
-    openGLContext.extensions.glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 }
 
 //==============================================================================

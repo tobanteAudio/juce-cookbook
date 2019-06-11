@@ -1,6 +1,6 @@
 #pragma once
 
-#include "JuceHeader.h"
+#include "core/common.hpp"
 
 #include "GL/Vertex.hpp"
 #include "WavefrontObject.hpp"
@@ -42,34 +42,33 @@ private:
         {
             numIndices = aShape.mesh.indices.size();
 
-            openGLContext.extensions.glGenBuffers(1, &vertexBuffer);
-            openGLContext.extensions.glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
+            glGenBuffers(1, &vertexBuffer);
+            glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
 
             Array<Vertex> vertices;
             createVertexListFromMesh(aShape.mesh, vertices, Colours::green);
 
-            openGLContext.extensions.glBufferData(
-                GL_ARRAY_BUFFER, static_cast<GLsizeiptr>(static_cast<size_t>(vertices.size()) * sizeof(Vertex)),
-                vertices.getRawDataPointer(), GL_STATIC_DRAW);
+            glBufferData(GL_ARRAY_BUFFER,
+                         static_cast<GLsizeiptr>(static_cast<size_t>(vertices.size()) * sizeof(Vertex)),
+                         vertices.getRawDataPointer(), GL_STATIC_DRAW);
 
-            openGLContext.extensions.glGenBuffers(1, &indexBuffer);
-            openGLContext.extensions.glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
-            openGLContext.extensions.glBufferData(
-                GL_ELEMENT_ARRAY_BUFFER,
-                static_cast<GLsizeiptr>(static_cast<size_t>(numIndices) * sizeof(juce::uint32)),
-                aShape.mesh.indices.getRawDataPointer(), GL_STATIC_DRAW);
+            glGenBuffers(1, &indexBuffer);
+            glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
+            glBufferData(GL_ELEMENT_ARRAY_BUFFER,
+                         static_cast<GLsizeiptr>(static_cast<size_t>(numIndices) * sizeof(juce::uint32)),
+                         aShape.mesh.indices.getRawDataPointer(), GL_STATIC_DRAW);
         }
 
         ~VertexBuffer()
         {
-            openGLContext.extensions.glDeleteBuffers(1, &vertexBuffer);
-            openGLContext.extensions.glDeleteBuffers(1, &indexBuffer);
+            glDeleteBuffers(1, &vertexBuffer);
+            glDeleteBuffers(1, &indexBuffer);
         }
 
         void bind()
         {
-            openGLContext.extensions.glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
-            openGLContext.extensions.glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
+            glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
+            glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBuffer);
         }
 
         GLuint vertexBuffer, indexBuffer;
@@ -85,8 +84,8 @@ private:
     static void createVertexListFromMesh(const WavefrontObjFile::Mesh& mesh, Array<Vertex>& list, Colour colour)
     {
         auto scale = 0.2f;
-        WavefrontObjFile::TextureCoord defaultTexCoord {0.5f, 0.5f};
-        WavefrontObjFile::Vertex defaultNormal {0.5f, 0.5f, 0.5f};
+        WavefrontObjFile::TextureCoord defaultTexCoord{0.5f, 0.5f};
+        WavefrontObjFile::Vertex defaultNormal{0.5f, 0.5f, 0.5f};
 
         for (auto i = 0; i < mesh.vertices.size(); ++i)
         {

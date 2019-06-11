@@ -1,6 +1,6 @@
 #pragma once
 
-#include "JuceHeader.h"
+#include "core/common.hpp"
 
 #include "GL/Attributes.hpp"
 #include "GL/Uniforms.hpp"

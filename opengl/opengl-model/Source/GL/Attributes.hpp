@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include "JuceHeader.h"
+#include "core/common.hpp"
 
 #include "Vertex.hpp"
 

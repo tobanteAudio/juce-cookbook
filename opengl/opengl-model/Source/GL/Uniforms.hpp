@@ -1,6 +1,7 @@
 #pragma once
 
-#include "JuceHeader.h"
+#include "core/common.hpp"
+
 
 // This class just manages the uniform values that the demo shaders use.
 struct Uniforms
