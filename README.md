@@ -2,7 +2,7 @@
 
 **WARNING: WORK IN PROGRESS. SOME SECTION MIGHT NOT HAVE ANY CONTENT OR ONLY A LIST WITH KEYWORDS FOR ME AS A TODO LIST.**
 
-A collection of examples & workflow tips related to the C++ libary JUCE.
+A collection of examples & workflow tips related to the C++ library JUCE.
 
 ## Content
 
@@ -21,13 +21,13 @@ A collection of examples & workflow tips related to the C++ libary JUCE.
 - [Other libraries](#other-libraries)
   - [Qt](#qt)
   - [SFML](#sfml)
-  - [imgui](#mgui)
+  - [IMGUI](#imgui)
 - [Online resources](#online-resources)
 - [C++](#c++)
 - [Getting started](#getting-started)
   - [Project types](#project-types)
   - [Project setup](#project-setup)
-  - [Project managment](#project-managment)
+  - [Project management](#project-management)
   - [Project documentation](#project-documentation)
   - [Platforms](#platforms)
     - [Linux](#Linux)
@@ -47,7 +47,7 @@ A collection of examples & workflow tips related to the C++ libary JUCE.
   - [Appveyor](#appveyor)
   - [Deploy](#deploy)
 - [Publish](#publish)
-- [My wishlist for JUCE](#my-wishlist-for-juce)
+- [My wish list for JUCE](#my-wish-list-for-juce)
 - [What next](#what-next)
 - [Related resources](#related-resources)
 
@@ -77,11 +77,11 @@ All of my example code in this repository is published to the public domain unde
 
 If you find any bugs or design problems in my examples feel free to open up an issue on GitHub.
 
-If you want to add examples or resources to this collection you can eather push a pull request directly or open up an issue first, if you have any questions.
+If you want to add examples or resources to this collection you can either push a pull request directly or open up an issue first, if you have any questions. Please make sure that your topic is not already covered by one of the official JUCE tutorials. If you want to add to one of the official tutorials make sure you include a link to that page, so we can keep duplicate code as minimal as possible. Maintaining the same tutorial twice doesn't make much sense.
 
 ## How to read
 
-- Each chapter can be read individually
+Each chapter can be read individually, feel free to jump around and find sections that are of interest to you.
 
 ## How to run examples
 
@@ -97,6 +97,8 @@ All of the example projects included in this repository are normal `Projucer` pr
 - Build
 
 ### Linux
+
+Make sure you add `Projucer` to your `PATH`.
 
 ```sh
 cd $PROJECT_ROOT
@@ -250,7 +252,7 @@ If you are already pretty good in the language and have a basic understanding of
 - AudioPluginHost
   - IDE Integration
 
-### Project Managment
+### Project management
 
 - git submodules
 - living at head
@@ -310,6 +312,8 @@ If you are already pretty good in the language and have a basic understanding of
 
 ## OpenGL
 
+- Text for 3 examples
+
 ## Custom modules
 
 ## Tracktion Engine
@@ -330,13 +334,13 @@ There are many CI services online for free if your project is publicly available
 ### Travis CI
 
 - macOS
-- linux
+- Linux
 
-### appveyor
+### Appveyor
 
 - windows
 
-### deploy
+### Deploy
 
 - docs
 - app/plugin
@@ -347,7 +351,7 @@ There are many CI services online for free if your project is publicly available
 - zip
 - installer/package
 
-## My wishlist for JUCE
+## My wish list for JUCE
 
 - FreeBSD support
 - Build system
@@ -357,7 +361,7 @@ There are many CI services online for free if your project is publicly available
 
 - Read the docs
 - Read the source
-- Read other app written in juce
+- Read other app written in JUCE
   - modEQ
   - helm
   - temper
@@ -366,4 +370,4 @@ There are many CI services online for free if your project is publicly available
 
 - Faust
   - YouTube
-- std::audio
+- `std::audio`
