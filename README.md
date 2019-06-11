@@ -57,7 +57,7 @@ A collection of examples & workflow tips related to the C++ libary JUCE.
 
 I started using JUCE because I wanted to make my own audio plugins and after doing a little bit research JUCE seemed to be the way to go.
 
-Over the last couple of years, I have collected all of the resources related to JUCE that I could find. The list of bookmarked pages & code snippets have grown to quite a collection, so I decided to publish them as a cheatsheet for myself and everybody else who uses or wants to use JUCE.
+Over the last couple of years, I have collected all of the resources related to JUCE that I could find. The list of bookmarked pages & code snippets have grown to quite a collection, so I decided to publish them as a cheat sheet for myself and everybody else who uses or wants to use JUCE.
 
 ### About myself
 
@@ -65,7 +65,7 @@ I started with programming at the age of 10. C++ was my first and primary langua
 
 ## Disclaimer
 
-I'm definitely not an expert in JUCE or C++. I do have a job as a C++ developer, but unfortunatly not using JUCE. So if you find any problems in my examples, feel free to open an issue.
+I'm definitely not an expert in JUCE or C++. I do have a job as a C++ developer, but unfortunately not using JUCE. So if you find any problems in my examples, feel free to open an issue.
 
 ## Code license
 
@@ -75,7 +75,7 @@ All of my example code in this repository is published to the public domain unde
 
 ## Contribute
 
-If you find any bugs or design problems in my examples feel free to open up an issue on Github.
+If you find any bugs or design problems in my examples feel free to open up an issue on GitHub.
 
 If you want to add examples or resources to this collection you can eather push a pull request directly or open up an issue first, if you have any questions.
 
@@ -123,7 +123,7 @@ The appearance is easily customizable. If the ones provided by JUCE don't fit yo
 
 #### Mobil
 
-- Easilly use C++ for both Android & iOS
+- Easily use C++ for both Android & iOS
 - Use native features
 
 ## Other libraries
@@ -142,7 +142,7 @@ The appearance is easily customizable. If the ones provided by JUCE don't fit yo
 ### imgui
 
 - very simple
-- intented for simple widgets
+- intended for simple widgets
 - works well with SFML
   - cpp_box
 
@@ -154,15 +154,15 @@ The appearance is easily customizable. If the ones provided by JUCE don't fit yo
 
 ### Docs & Forum
 
-The two most importanted resources when developing with JUCE are the official [JUCE documentation](https://juce.com/learn/documentation) & the [JUCE forum](https://forum.juce.com/).
+The two most important resources when developing with JUCE are the official [JUCE documentation](https://juce.com/learn/documentation) & the [JUCE forum](https://forum.juce.com/).
 
 The [API documentation](https://juce.com/learn/documentation) for JUCE is very good in my opinion. All of the classes & functions are clearly documented.
 
 The same goes for the [forum](https://forum.juce.com/), every time I asked a question, it was answered on the same day, which compared to other communities is simply awesome.
 
-### Youtube
+### YouTube
 
-If you like to learn using videos, you should be able to go from beginner to advanced using the resources found mainly on Youtube.
+If you like to learn using videos, you should be able to go from beginner to advanced using the resources found mainly on YouTube.
 
 #### ADC Talks
 
@@ -170,7 +170,7 @@ The JUCE team has their own [Youtube channel](https://www.youtube.com/channel/UC
 
 #### The Audio Programmer
 
-The Audio Programmer is a Youtube channel which almost only does JUCE related developmnent tutorials. He has videos the basics on getting up & running with the library, the basics on `Components`, an introduction to audio plugin development and interviews with people working in the audio developer industry. Each video is 20-60min long.
+The Audio Programmer is a YouTube channel which almost only does JUCE related development tutorials. He has videos the basics on getting up & running with the library, the basics on `Components`, an introduction to audio plugin development and interviews with people working in the audio developer industry. Each video is 20-60min long.
 
 If you are new to C++ and audio this is a create place to start.
 
@@ -193,8 +193,8 @@ If you are already pretty good in the language and have a basic understanding of
   - TheCherno
   - CppCon, etc.
   - Books
-- Idiums
-  - Inheritence
+- Idioms
+  - Inheritance
     - virtual / override
   - Lambdas
   - Constexpr
