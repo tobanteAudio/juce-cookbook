@@ -207,9 +207,15 @@ If you are already pretty good in the language and have a basic understanding of
 
 #### TheCherno
 
+- Focuses on Game & Graphics programming
+- Good basic C++ concept videos
+
 #### Conferences
 
 - CppCon, etc.
+- BoostCon
+- ACCU
+- ...
 
 #### CppWeekly
 
@@ -234,7 +240,7 @@ If you are already pretty good in the language and have a basic understanding of
 - XCode
 - Makefile
 - Visual Studio Code
-- CodeBlocks
+- CLion
 
 #### compiler
 
@@ -257,9 +263,23 @@ If you are already pretty good in the language and have a basic understanding of
 
 #### compiler-explorer
 
+Online compiler. Great for testing small code snippets. Does not currently have `JUCE` installed unfortunatly.
+
+#### coverage
+
+- gcc + gcov & lcov
+- clang + llvm-profdata & llvm-cov
+
 #### sanitizers
 
 - GCC & clang
+  - ASAN
+  - UBSAN
+  - MSAN
+  - TSAN
+
+- MSVC
+  - ASAN (32bit only)
 
 #### Makefile/Scripts
 
@@ -271,12 +291,26 @@ If you are already pretty good in the language and have a basic understanding of
 
 ### Project Types
 
+- ConsoleApp
+- GuiApp
 - AudioApp
 - Plugin
 
 ### Project Setup
 
-- Projucer
+#### Projucer
+
+- Quick Setup
+- Perfect IDE integration
+- Hard to link external code/libraries
+
+#### CMake
+
+- Interface targets
+- Binary builder
+
+### Project Run/Debugging
+
 - AudioPluginHost
   - IDE Integration
 
@@ -301,16 +335,30 @@ If you are already pretty good in the language and have a basic understanding of
   - Fedora
 - Raspberry PI
 
-### Project template
+### Project Check-List
+
+- clang-format
+- clang-tidy
+- Warnings
+- Optimizations
+
 
 ## UI
 
 - Basic Components
-  - Top list
+  - Button
+  - Slider
+  - Label
+  - Combobox
 - Projucer live build
   - Tricks
 - Animations
 - LookAndFeel
+  - Colour IDs
+  - Override functions
+  - Look at JUCE implementations
+- Custom components
+  - Look&Feel methods
 
 ## DSP
 
@@ -320,7 +368,11 @@ If you are already pretty good in the language and have a basic understanding of
 - AudioProcessor
 - Plugins
   - VST/AU
-  - ValueTree/Undo
+- ValueTree
+  - Parameters
+  - Undo
+  - Generic Editor
+  - Attachments
 
 ## MVC
 
@@ -357,14 +409,25 @@ Small and definitely not complete list of 3rd party JUCE modules.
 
 If you know of any other JUCE modules, fell free to open an issue so we cam add it to the list.
 
-## Tracktion Engine
+## Testing
 
-## Unit tests
+### JUCE unit tests
 
-- JUCE unit tests
-  - How to run them in a plugin build
-- Catch2
-- pluginval
+-  How to run them in a plugin build
+
+### Catch2
+
+- Link against CMake shared code target
+- Register tests
+- CTest
+
+### pluginval
+
+- Download or build from source
+- Run with maximum strictness (10)
+- Test AU & VST
+
+### Valgrind
 
 ## Continuous integration
 
@@ -401,12 +464,13 @@ There are many CI services online for free if your project is publicly available
 
 ## My wish list for JUCE
 
-- FreeBSD support
-- Build system
+- FreeBSD support (Working on it, see [tobanteAudio/juce-freebsd-example](https://github.com/tobanteAudio/juce-freebsd-example))
+- Build system (solved in JUCE6)
   - CMake
   - Multiple targets in one project
-- More widgets
-- Better OpenGL integration
+- Better Graphics API integration
+  - Metal (coming in JUCE6)
+  - Vulkan
 
 ## What next
 
