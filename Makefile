@@ -15,11 +15,17 @@ GL_BASIC_PATH = opengl/opengl-basic
 GL_SHADER_PATH = opengl/opengl-shader
 GL_MODEL_PATH = opengl/opengl-model
 
+.PHONY: pdf
 pdf:
 	# Generate pdf from README using npm package mdpdf
 	@mkdir -p $(PDF_OUTPUT_DIR)
 	@mdpdf $(PDF_SOURCE) $(PDF_OUTPUT_DIR)/$(PDF_NAME)
 
+.PHONY: toc
+toc:
+	cat README.md | $(SH) ./scripts/create_toc.sh
+
+.PHONY: clean
 clean:
 	# Clean all build directories
 	@rm -rf $(PDF_OUTPUT_DIR)
@@ -32,10 +38,12 @@ clean:
 	@rm -rf $(GL_SHADER_PATH)/$(LIBRARY_DIR)
 	@rm -rf $(GL_MODEL_PATH)/$(LIBRARY_DIR)
 
+.PHONY: stats
 stats:
 	# Count source lines using cloc
 	@cloc README.md $(GL_BASIC_PATH) $(GL_SHADER_PATH) $(GL_MODEL_PATH)
 
+.PHONY: format
 format:
 	# Format C++ code using clang-format
 	@find $(GL_BASIC_PATH)/Source -iname '*.hpp' -o -iname '*.cpp' | xargs clang-format -i
