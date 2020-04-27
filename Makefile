@@ -17,7 +17,6 @@ GL_MODEL_PATH = opengl/opengl-model
 
 .PHONY: pdf
 pdf:
-	# Generate pdf from README using npm package mdpdf
 	@mkdir -p $(PDF_OUTPUT_DIR)
 	@mdpdf $(PDF_SOURCE) $(PDF_OUTPUT_DIR)/$(PDF_NAME)
 
@@ -27,7 +26,6 @@ toc:
 
 .PHONY: clean
 clean:
-	# Clean all build directories
 	@rm -rf $(PDF_OUTPUT_DIR)
 
 	@rm -rf $(GL_BASIC_PATH)/$(BUILD_DIR)
@@ -40,12 +38,10 @@ clean:
 
 .PHONY: stats
 stats:
-	# Count source lines using cloc
 	@cloc README.md $(GL_BASIC_PATH) $(GL_SHADER_PATH) $(GL_MODEL_PATH)
 
 .PHONY: format
 format:
-	# Format C++ code using clang-format
 	@find $(GL_BASIC_PATH)/Source -iname '*.hpp' -o -iname '*.cpp' | xargs clang-format -i
 	@find $(GL_SHADER_PATH)/Source -iname '*.hpp' -o -iname '*.cpp' | xargs clang-format -i
 	@find $(GL_MODEL_PATH)/Source -iname '*.hpp' -o -iname '*.cpp' | xargs clang-format -i
