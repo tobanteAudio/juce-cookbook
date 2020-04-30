@@ -1,7 +1,7 @@
 .PHONY: pdf clean stats format
 default: pdf
 
-PDF_NAME = tobanteAudio-JUCE-Cookbook.pdf
+PDF_NAME = JUCE-Cookbook.pdf
 DIST_DIR = dist
 
 .PHONY: pdf

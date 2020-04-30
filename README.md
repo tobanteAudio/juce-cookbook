@@ -6,7 +6,7 @@ A collection of examples & workflow tips related to the C++ library JUCE.
 
 [**Read Online**](https://tobanteaudio.github.io/juce-cookbook/)
 
-[**Latest PDF (direct download)**](https://github.com/tobanteAudio/juce-cookbook/releases/latest/download/tobanteAudio-JUCE-Cookbook.pdf)
+[**Latest PDF (direct download)**](https://github.com/tobanteAudio/juce-cookbook/releases/latest/download/JUCE-Cookbook.pdf)
 
 [**GitHub Repository**](https://github.com/tobanteAudio/juce-cookbook)
 
