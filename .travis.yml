@@ -7,6 +7,7 @@ script-anchors:
     - cd $TRAVIS_BUILD_DIR
     - yarn global add gitbook-cli
     - make pdf
+    - make html
 
 matrix:
   include:
