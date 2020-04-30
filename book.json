@@ -1,5 +1,12 @@
 {
   "title": "JUCE Cookbook",
   "description": "Collection of JUCE examples & workflow tips.",
-  "author": "Tobias Hienzsch"
+  "author": "Tobias Hienzsch",
+  "gitbook": ">= 3.0.0",
+  "pdf": {
+    "pageNumbers": true,
+    "fontSize": 12,
+    "fontFamily": "Arial",
+    "paperSize": "a4"
+  }
 }
