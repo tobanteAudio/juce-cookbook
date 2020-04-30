@@ -23,7 +23,7 @@
   - [Unit tests](chapters/testing/unit_test.md)
   - [pluginval](chapters/testing/pluginval.md)
   - [Sanitizers](chapters/testing/sanitizers.md)
-  - [Valgrind](chapters/testing/valgrind.md)
+  - [Benchmark](chapters/testing/benchmark.md)
 - [Continuous Integration](chapters/ci.md)
   - [Travis CI](chapters/ci/travis.md)
   - [AppVeyor](chapters/ci/appveyor.md)
