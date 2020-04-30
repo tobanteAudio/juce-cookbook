@@ -1,8 +1,6 @@
-# How to read
+# How to run examples
 
 Each chapter can be read individually, feel free to jump around and find sections that are of interest to you.
-
-## How to run examples
 
 All of the example projects included in this repository are normal `Projucer` projects, so running them is the same as any other project created with the `Projucer`
 
