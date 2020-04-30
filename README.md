@@ -14,7 +14,7 @@ A collection of examples & workflow tips related to the C++ library JUCE.
 
 ### Why did I write this
 
-I started using JUCE because I wanted to make my own audio plugins and after doing a little bit research JUCE seemed to be the way to go.
+I started using JUCE because I wanted to make my own audio plug-ins and after doing a little bit research JUCE seemed to be the way to go.
 
 Over the last couple of years, I have collected all of the resources related to JUCE that I could find. The list of bookmarked pages & code snippets have grown to quite a collection, so I decided to publish them as a cheat sheet for myself and everybody else who uses or wants to use JUCE.
 
@@ -28,7 +28,7 @@ I'm definitely not an expert in JUCE or C++. I do have a job as a C++ developer,
 
 ## Code license
 
-JUCE is published under a dual license, it is free for open source & small projects. You can find their license for JUCE 5 [here](https://juce.com/juce-5-license).
+JUCE is published under a dual license, it is free for open source & small projects. You can find their license for JUCE [here](https://juce.com/juce-5-license).
 
 All of my example code in this repository is published to the public domain under the [Creative Commons CC0 1.0](#license) license.
 
