@@ -1,7 +1,7 @@
 # Travis CI
 
 - basics
-- install deps
+- install dependencies
   - Linux fake Xorg
 - platform matrix
 - push to gh-pages

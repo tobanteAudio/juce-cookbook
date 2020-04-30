@@ -59,5 +59,23 @@ Arduino
 GLEW
 Combobox
 LookAndFeel
+gh-pages
+14
+17
+20
+ConsoleApp
+GuiApp
+AudioApp
+90's
+cpp_box
+TODO
+catchorg
+juce-freebsd-example
+6
+ATK
+3
+IO
  - chapters/ci.md
 TLDR
+ - chapters/testing/pluginval.md
+github.com

@@ -1,6 +1,6 @@
 # Appveyor
 
-## Example Config
+## Example Configuration
 
 JUCE + CMake:
 

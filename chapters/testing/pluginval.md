@@ -15,7 +15,7 @@ It is designed to be used by both plugin and host developers
 to ensure stability and compatibility between plugins and hosts.
 ```
 
-You can run `pluginval` both in command-line or GUI mode. So it's very easy to integrate into yout `CI` pipeline.
+You can run `pluginval` both in command-line or GUI mode. So it's very easy to integrate into your `CI` pipeline.
 
 ## Checks
 
