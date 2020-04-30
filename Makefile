@@ -1,19 +1,8 @@
 .PHONY: pdf clean stats format
 default: pdf
 
-# PDF
-PDF_SOURCE = README.md
 PDF_NAME = tobanteAudio-JUCE-Cookbook.pdf
 DIST_DIR = dist
-
-# JUCE generated
-BUILD_DIR = Builds
-LIBRARY_DIR = JuceLibraryCode
-
-# OpenGL
-GL_BASIC_PATH = opengl/opengl-basic
-GL_SHADER_PATH = opengl/opengl-shader
-GL_MODEL_PATH = opengl/opengl-model
 
 .PHONY: pdf
 pdf:
@@ -27,9 +16,11 @@ html:
 
 .PHONY: dev
 dev:
-	gitbook serve  --debug
+	gitbook serve --debug
 
+.PHONY: spellcheck
 spellcheck:
+	@which mdspell
 	mdspell -r "chapters/**/*.md"
 	mdspell -r README.md
 	mdspell -r SUMMARY.md
@@ -45,7 +36,5 @@ stats:
 
 .PHONY: format
 format:
-	find $(GL_BASIC_PATH)/Source -iname '*.hpp' -o -iname '*.cpp' | xargs clang-format -i
-	find $(GL_SHADER_PATH)/Source -iname '*.hpp' -o -iname '*.cpp' | xargs clang-format -i
-	find $(GL_MODEL_PATH)/Source -iname '*.hpp' -o -iname '*.cpp' | xargs clang-format -i
-
+	find . -iname '*.h' -o -iname '*.hpp' -o -iname '*.cpp' | xargs clang-format -i
+	
