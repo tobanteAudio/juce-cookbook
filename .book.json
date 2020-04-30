@@ -3,6 +3,7 @@
   "description": "Collection of JUCE examples & workflow tips.",
   "author": "Tobias Hienzsch",
   "pdf": {
-    "pageNumbers": true
+    "pageNumbers": true,
+    "paperSize": "a4"
   }
 }

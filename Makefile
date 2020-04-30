@@ -17,32 +17,24 @@ GL_MODEL_PATH = opengl/opengl-model
 
 .PHONY: pdf
 pdf:
-	@mkdir -p $(PDF_OUTPUT_DIR)
-	@mdpdf $(PDF_SOURCE) $(PDF_OUTPUT_DIR)/$(PDF_NAME)
+	mkdir -p $(PDF_OUTPUT_DIR)
+	gitbook pdf . $(PDF_OUTPUT_DIR)/$(PDF_NAME)
 
-.PHONY: toc
-toc:
-	cat README.md | $(SH) ./scripts/create_toc.sh
+.PHONY: dev
+dev:
+	gitbook serve  --debug
 
 .PHONY: clean
 clean:
-	@rm -rf $(PDF_OUTPUT_DIR)
-
-	@rm -rf $(GL_BASIC_PATH)/$(BUILD_DIR)
-	@rm -rf $(GL_SHADER_PATH)/$(BUILD_DIR)
-	@rm -rf $(GL_MODEL_PATH)/$(BUILD_DIR)
-
-	@rm -rf $(GL_BASIC_PATH)/$(LIBRARY_DIR)
-	@rm -rf $(GL_SHADER_PATH)/$(LIBRARY_DIR)
-	@rm -rf $(GL_MODEL_PATH)/$(LIBRARY_DIR)
+	rm -rf $(PDF_OUTPUT_DIR)
 
 .PHONY: stats
 stats:
-	@cloc README.md $(GL_BASIC_PATH) $(GL_SHADER_PATH) $(GL_MODEL_PATH)
+	cloc README.md SUMMARY.md chapters
 
 .PHONY: format
 format:
-	@find $(GL_BASIC_PATH)/Source -iname '*.hpp' -o -iname '*.cpp' | xargs clang-format -i
-	@find $(GL_SHADER_PATH)/Source -iname '*.hpp' -o -iname '*.cpp' | xargs clang-format -i
-	@find $(GL_MODEL_PATH)/Source -iname '*.hpp' -o -iname '*.cpp' | xargs clang-format -i
+	find $(GL_BASIC_PATH)/Source -iname '*.hpp' -o -iname '*.cpp' | xargs clang-format -i
+	find $(GL_SHADER_PATH)/Source -iname '*.hpp' -o -iname '*.cpp' | xargs clang-format -i
+	find $(GL_MODEL_PATH)/Source -iname '*.hpp' -o -iname '*.cpp' | xargs clang-format -i
 
