@@ -1,0 +1,4 @@
+# Debugging
+
+- AudioPluginHost
+  - IDE Integration
