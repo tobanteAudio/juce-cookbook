@@ -4,7 +4,7 @@ default: pdf
 # PDF
 PDF_SOURCE = README.md
 PDF_NAME = tobanteAudio-JUCE-Cookbook.pdf
-PDF_OUTPUT_DIR = dist
+DIST_DIR = dist
 
 # JUCE generated
 BUILD_DIR = Builds
@@ -17,8 +17,13 @@ GL_MODEL_PATH = opengl/opengl-model
 
 .PHONY: pdf
 pdf:
-	mkdir -p $(PDF_OUTPUT_DIR)
-	gitbook pdf . $(PDF_OUTPUT_DIR)/$(PDF_NAME)
+	mkdir -p $(DIST_DIR)
+	gitbook pdf . $(DIST_DIR)/$(PDF_NAME)
+
+.PHONY: html
+html:
+	mkdir -p $(DIST_DIR)
+	gitbook build . $(DIST_DIR)/html
 
 .PHONY: dev
 dev:
@@ -26,7 +31,7 @@ dev:
 
 .PHONY: clean
 clean:
-	rm -rf $(PDF_OUTPUT_DIR)
+	rm -rf $(DIST_DIR)
 	rm -rf _book
 
 .PHONY: stats
