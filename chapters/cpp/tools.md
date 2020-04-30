@@ -36,18 +36,6 @@ Online compiler. Great for testing small code snippets. Does not currently have 
 - gcc + gcov & lcov
 - clang + llvm-profdata & llvm-cov
 
-## sanitizers
-
-- GCC & clang
-
-  - ASAN
-  - UBSAN
-  - MSAN
-  - TSAN
-
-- MSVC
-  - ASAN (32bit only)
-
 ## Makefile/Scripts
 
 - Makefile
