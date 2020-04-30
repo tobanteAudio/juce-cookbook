@@ -21,7 +21,7 @@
   - [JUCE Modules](chapters/working_with_juce/juce_modules.md)
 - [Testing](chapters/testing.md)
   - [Unit tests](chapters/testing/unit_test.md)
-  - [PluginVal](chapters/testing/pluginval.md)
+  - [pluginval](chapters/testing/pluginval.md)
   - [Sanitizers](chapters/testing/sanitizers.md)
   - [Valgrind](chapters/testing/valgrind.md)
 - [Continuous Integration](chapters/ci.md)
