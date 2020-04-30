@@ -82,6 +82,7 @@ CC0
 1.0
 perf
 AppVeyor
+Shader
  - chapters/ci.md
 TLDR
  - chapters/testing/pluginval.md
