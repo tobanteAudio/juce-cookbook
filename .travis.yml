@@ -1,7 +1,3 @@
-branches:
-  only:
-    - master
-
 script-anchors:
   - &script-pdf
     - cd $TRAVIS_BUILD_DIR
@@ -14,6 +10,9 @@ matrix:
       language: node_js
       node_js: "10"
       script: *script-pdf
+      branches:
+        only:
+          - master
       deploy:
         provider: releases
         api_key: $GITHUB_TOKEN
