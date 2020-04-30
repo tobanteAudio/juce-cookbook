@@ -1,32 +1,15 @@
-script-anchors:
-  - &script-pdf
-    - cd $TRAVIS_BUILD_DIR
-    - npm install mdpdf
-    - make
+#   branches:
+#     only:
+#       - master
 
-  - &script-pdf-new
+script-anchors:
+  - &script-publish
     - cd $TRAVIS_BUILD_DIR
     - yarn global add gitbook-cli
     - make pdf
 
 matrix:
   include:
-    # - os: linux
-    #   language: node_js
-    #   node_js: "10"
-    #   script: *script-pdf
-    #   branches:
-    #     only:
-    #       - master
-    #   deploy:
-    #     provider: releases
-    #     api_key: $GITHUB_TOKEN
-    #     name: Build $(date +'%d.%m.%Y %R')
-    #     file: $TRAVIS_BUILD_DIR/dist/tobanteAudio-JUCE-Cookbook.pdf
-    #     skip_cleanup: true
-    #     on:
-    #       all_branches: true
-
     - os: linux
       language: node_js
       node_js: "10"
@@ -36,4 +19,12 @@ matrix:
             - calibre
             - calibre-bin
             - libxss1
-      script: *script-pdf-new
+      script: *script-publish
+      deploy:
+        provider: releases
+        api_key: $GITHUB_TOKEN
+        name: Build $(date +'%d.%m.%Y %R')
+        file: $TRAVIS_BUILD_DIR/dist/tobanteAudio-JUCE-Cookbook.pdf
+        skip_cleanup: true
+        on:
+          all_branches: true
