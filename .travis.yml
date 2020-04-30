@@ -21,10 +21,17 @@ matrix:
             - libxss1
       script: *script-publish
       deploy:
-        provider: releases
-        api_key: $GITHUB_TOKEN
-        name: Build $(date +'%d.%m.%Y %R')
-        file: $TRAVIS_BUILD_DIR/dist/tobanteAudio-JUCE-Cookbook.pdf
-        skip_cleanup: true
-        on:
-          all_branches: true
+        - provider: releases
+          api_key: $GITHUB_TOKEN
+          name: Build $(date +'%d.%m.%Y %R')
+          file: $TRAVIS_BUILD_DIR/dist/tobanteAudio-JUCE-Cookbook.pdf
+          skip_cleanup: true
+          on:
+            branch: master
+        - provider: pages
+          skip_cleanup: true
+          local_dir: $TRAVIS_BUILD_DIR/dist/html
+          github_token: $GITHUB_TOKEN
+          keep_history: true
+          on:
+            branch: master
