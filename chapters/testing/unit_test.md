@@ -8,4 +8,4 @@
 
 ## JUCE Unit Tests
 
-- How to run them in a plugin build
+- How to run them in a plug-in build

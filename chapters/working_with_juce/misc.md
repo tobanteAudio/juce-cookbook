@@ -1,6 +1,6 @@
 # Misc
 
-## MVC
+## Model View Controller
 
 - Why
 - Example
@@ -13,7 +13,7 @@
 
 ## Network IO
 
-- OSC
+- Open Sound Control
   - Arduino
 
 ## OpenGL

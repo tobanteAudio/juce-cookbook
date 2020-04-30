@@ -4,7 +4,7 @@
   - Gain example
   - Compressor example
 - AudioProcessor
-- Plugins
+- Plug-ins
   - VST/AU
 - ValueTree
   - Parameters

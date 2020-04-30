@@ -5,7 +5,7 @@
 - ConsoleApp
 - GuiApp
 - AudioApp
-- Plugin
+- Plug-in
 
 ## Project management
 

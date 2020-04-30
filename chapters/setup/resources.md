@@ -22,7 +22,7 @@ The JUCE team has their own [YouTube channel](https://www.youtube.com/channel/UC
 
 ### The Audio Programmer
 
-`The Audio Programmer` is a YouTube channel which almost only does JUCE related development tutorials. He has videos for the basics on getting up & running with the library, introduction to `Components`, an introduction to audio plugin development and interviews with people working in the audio developer industry. Each video is `~20-60min` long.
+`The Audio Programmer` is a YouTube channel which almost only does JUCE related development tutorials. He has videos for the basics on getting up & running with the library, introduction to `Components`, an introduction to audio plug-in development and interviews with people working in the audio developer industry. Each video is `~20-60min` long.
 
 If you are new to C++ and audio this is a create place to start.
 

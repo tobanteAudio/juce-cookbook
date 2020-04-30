@@ -1,8 +1,8 @@
 # JUCE Modules
 
-## 3rd Party Modules
+## Third Party Modules
 
-Small and definitely not complete list of 3rd party JUCE modules.
+Small and definitely not complete list of Third party JUCE modules.
 
 | Name                                                                  | License        | Description                                                          | Comment                     |
 | --------------------------------------------------------------------- | -------------- | -------------------------------------------------------------------- | --------------------------- |

@@ -29,7 +29,7 @@
 
 ## compiler-explorer
 
-Online compiler. Great for testing small code snippets. Does not currently have `JUCE` installed unfortunatly.
+Online compiler. Great for testing small code snippets. Does not currently have `JUCE` installed unfortunately.
 
 ## coverage
 

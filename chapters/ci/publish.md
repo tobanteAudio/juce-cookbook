@@ -7,4 +7,4 @@
 ## Deploy
 
 - docs
-- app/plugin
+- app/plug-in

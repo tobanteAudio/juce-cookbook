@@ -1,0 +1,63 @@
+# markdown-spellcheck spelling configuration file
+# Format - lines beginning # are comments
+# global dictionary is at the start, file overrides afterwards
+# one word per line, to define a file override use ' - filename'
+# where filename is relative to this configuration file
+GitLab
+modEQ
+macOS
+JUCE
+Appveyor
+Xorg
+pluginval
+constexpr
+noexcept
+const
+TheCherno
+CppCon
+BoostCon
+ACCU
+CppWeekly
+XCode
+CLion
+gcc
+gcov
+lcov
+llvm-profdata
+llvm-cov
+ASAN
+UBSAN
+MSAN
+TSAN
+MSVC
+32bit
+Projucer
+submodules
+Doxygen
+readthedocs
+AudioPluginHost
+CMake
+BSDs
+AudioUnit
+VST
+FreeCAD
+premade
+SFML
+IMGUI
+DSP
+Catch2
+Valgrind
+CTest
+tobanteAudio
+Vulkan
+AudioProcessor
+ValueTree
+Tracktion
+DAW
+Foleys
+Arduino
+GLEW
+Combobox
+LookAndFeel
+ - chapters/ci.md
+TLDR

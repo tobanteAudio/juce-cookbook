@@ -6,7 +6,7 @@ Long story short, JUCE is a library which solves many common problems a develope
 
 ### Audio
 
-- Wraps all common plugin types.
+- Wraps all common plug-in types.
 - Basic DSP & Analysis
 - Vector instructions for x86 and ARM
 

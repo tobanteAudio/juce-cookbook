@@ -1,8 +1,10 @@
-# PluginVal
+# pluginval
 
-- Download or build from source
-- Run with maximum strictness (10)
-- Test AU & VST
+The pluginval team describes there software as:
+
+```text
+pluginval is a cross-platform plugin validator and tester application. It is designed to be used by both plugin and host developers to ensure stability and compatibility between plugins and hosts.
+```
 
 ## Install
 

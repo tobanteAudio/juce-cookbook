@@ -2,7 +2,7 @@
 
 - basics
 - install deps
-  - Linux fake xorg
+  - Linux fake Xorg
 - platform matrix
 - push to gh-pages
 - run pluginval
