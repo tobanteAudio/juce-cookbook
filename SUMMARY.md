@@ -19,6 +19,8 @@
   - [DSP](chapters/working_with_juce/dsp.md)
   - [Misc](chapters/working_with_juce/misc.md)
   - [JUCE Modules](chapters/working_with_juce/juce_modules.md)
+  - [Example Projects](chapters/working_with_juce/example_projects.md)
+  - [Code snippets](chapters/working_with_juce/code_snippets.md)
 - [Testing](chapters/testing.md)
   - [Unit tests](chapters/testing/unit_test.md)
   - [pluginval](chapters/testing/pluginval.md)
