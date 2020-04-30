@@ -75,6 +75,13 @@ juce-freebsd-example
 ATK
 3
 IO
+10
+JS
+Golang
+CC0
+1.0
+perf
+AppVeyor
  - chapters/ci.md
 TLDR
  - chapters/testing/pluginval.md

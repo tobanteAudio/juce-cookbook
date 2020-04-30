@@ -29,6 +29,11 @@ html:
 dev:
 	gitbook serve  --debug
 
+spellcheck:
+	mdspell -r "chapters/**/*.md"
+	mdspell -r README.md
+	mdspell -r SUMMARY.md
+
 .PHONY: clean
 clean:
 	rm -rf $(DIST_DIR)
