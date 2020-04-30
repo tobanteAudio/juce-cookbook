@@ -6,27 +6,28 @@ script-anchors:
 
   - &script-pdf-new
     - cd $TRAVIS_BUILD_DIR
-    - apt-get update && apt-get install -y calibre calibre-bin libxss1 libasound2
+    - apt install -y calibre calibre-bin libxss1 libasound2
     - yarn global add gitbook-cli
     - make pdf
 
 matrix:
   include:
-    - os: linux
-      language: node_js
-      node_js: "10"
-      script: *script-pdf
-      branches:
-        only:
-          - master
-      deploy:
-        provider: releases
-        api_key: $GITHUB_TOKEN
-        name: Build $(date +'%d.%m.%Y %R')
-        file: $TRAVIS_BUILD_DIR/dist/tobanteAudio-JUCE-Cookbook.pdf
-        skip_cleanup: true
-        on:
-          all_branches: true
+    # - os: linux
+    #   language: node_js
+    #   node_js: "10"
+    #   script: *script-pdf
+    #   branches:
+    #     only:
+    #       - master
+    #   deploy:
+    #     provider: releases
+    #     api_key: $GITHUB_TOKEN
+    #     name: Build $(date +'%d.%m.%Y %R')
+    #     file: $TRAVIS_BUILD_DIR/dist/tobanteAudio-JUCE-Cookbook.pdf
+    #     skip_cleanup: true
+    #     on:
+    #       all_branches: true
+
     - os: linux
       language: node_js
       node_js: "10"
