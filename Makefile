@@ -21,6 +21,13 @@ dev:
 .PHONY: spellcheck
 spellcheck:
 	@which mdspell
+	mdspell "chapters/**/*.md"
+	mdspell README.md
+	mdspell SUMMARY.md
+
+.PHONY: spellcheck-report
+spellcheck-report:
+	@which mdspell
 	mdspell -r "chapters/**/*.md"
 	mdspell -r README.md
 	mdspell -r SUMMARY.md
