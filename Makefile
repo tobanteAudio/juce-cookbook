@@ -27,6 +27,7 @@ dev:
 .PHONY: clean
 clean:
 	rm -rf $(PDF_OUTPUT_DIR)
+	rm -rf _book
 
 .PHONY: stats
 stats:

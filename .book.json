@@ -1,9 +1,5 @@
 {
   "title": "JUCE Cookbook",
   "description": "Collection of JUCE examples & workflow tips.",
-  "author": "Tobias Hienzsch",
-  "pdf": {
-    "pageNumbers": true,
-    "paperSize": "a4"
-  }
+  "author": "Tobias Hienzsch"
 }
