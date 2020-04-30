@@ -83,6 +83,8 @@ CC0
 perf
 AppVeyor
 Shader
+AppStore
+xcpretty
  - chapters/ci.md
 TLDR
  - chapters/testing/pluginval.md
