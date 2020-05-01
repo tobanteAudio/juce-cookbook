@@ -1,7 +1,6 @@
 # Summary
 
 - [Getting Started](chapters/getting_started.md)
-  - [How to run examples](chapters/getting_started/how_to_run_examples.md)
   - [Why JUCE?](chapters/getting_started/why_juce.md)
   - [Other Libraries](chapters/getting_started/other_libraries.md)
   - [Resources](chapters/getting_started/resources.md)
