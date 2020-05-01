@@ -85,6 +85,7 @@ AppVeyor
 Shader
 AppStore
 xcpretty
+Choco
  - chapters/ci.md
 TLDR
  - chapters/testing/pluginval.md
