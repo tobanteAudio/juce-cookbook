@@ -13,7 +13,6 @@
   - [Linux](chapters/setup/linux.md)
   - [Projucer vs. CMake](chapters/setup/projucer_vs_cmake.md)
   - [Create Project](chapters/setup/create_project.md)
-  - [Platforms](chapters/setup/platforms.md)
   - [Debugging](chapters/setup/debugging.md)
 - [Working with JUCE](chapters/working_with_juce.md)
   - [User Interface](chapters/working_with_juce/user_interface.md)
