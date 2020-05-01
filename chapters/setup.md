@@ -7,21 +7,21 @@
 - AudioApp
 - Plug-in
 
-## Project management
+## Project Management
 
 - git submodules
 - living at head
 
-## Project Documentation
+## Documentation
 
 - comments
 - GitHub Pages
 - Doxygen
 - readthedocs
 
-## Project Check-List
+## Check-List
 
 - clang-format
-- clang-tidy
 - Warnings
 - Optimizations
+- clang-tidy
