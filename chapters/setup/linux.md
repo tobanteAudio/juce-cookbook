@@ -2,8 +2,11 @@
 
 ## Dependencies
 
-- CMake (optional)
-- Ninja (optional)
+| Program |                  Description                   |         Source         | Comment  |
+| :-----: | :--------------------------------------------: | :--------------------: | :------: |
+|  CMake  |              Build file generator              | Native package manager | Optional |
+|  Ninja  | Build system similar to Makefiles, but faster. | Native package manager | Optional |
+|  Clang  |                   Compiler.                    | Native package manager | Optional |
 
 ## Install
 

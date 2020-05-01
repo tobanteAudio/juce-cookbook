@@ -2,8 +2,10 @@
 
 ## Dependencies
 
-- Visual Studio (download from Microsoft)
-- CMake (optional)
+|    Program    |     Description      |          Source          | Comment  |
+| :-----------: | :------------------: | :----------------------: | :------: |
+| Visual Studio |    Compiler & IDE    | Download from Microsoft  |          |
+|     CMake     | Build file generator | Scoop / Choco / Download | Optional |
 
 ## Install
 
