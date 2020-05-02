@@ -5,6 +5,7 @@
   - [Other Libraries](chapters/getting_started/other_libraries.md)
   - [Resources](chapters/getting_started/resources.md)
 - [C++](chapters/cpp.md)
+  - [IDE](chapters/cpp/ide.md)
   - [Tools](chapters/cpp/tools.md)
   - [Resources](chapters/cpp/resources.md)
 - [Setup](chapters/setup.md)

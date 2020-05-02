@@ -1,13 +1,5 @@
 # Tools
 
-## IDE
-
-- Visual Studio
-- XCode
-- Makefile
-- Visual Studio Code
-- CLion
-
 ## compiler
 
 - warnings are your friend
