@@ -34,4 +34,4 @@
   - [Publish](chapters/ci/publish.md)
 - [Wish List](chapters/wish_list.md)
 - [What's next](chapters/whats_next.md)
-- [License](license.md)
+- [License](chapters/license.md)
