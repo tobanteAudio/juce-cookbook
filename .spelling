@@ -96,6 +96,11 @@ webkit2gtk
 WebKit
 curl4-openssl
 ToDo
+xml
+github.com
+juce-framework
+juce6
+juce-6-demo
  - chapters/ci.md
 TLDR
  - chapters/testing/pluginval.md
