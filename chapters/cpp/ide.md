@@ -4,7 +4,7 @@
 
 - Only available on Windows
 - Native `CMake`/`clang-format` support
-- `clang-tidy` via plugin
+- `clang-tidy` via plug-in
 
 ## XCode
 
@@ -19,6 +19,6 @@
 ## Visual Studio Code
 
 - Available on Linux/macOS/Windows
-- `CMake`/`clang-format`/`clang-tidy` support via plugins
-- Has plugins for literally anything
+- `CMake`/`clang-format`/`clang-tidy` support via plug-ins
+- Has plug-ins for literally anything
 - Uses a lot of memory

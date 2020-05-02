@@ -18,7 +18,7 @@ find . -iname '*.h' -o -iname '*.hpp' -o -iname '*.cpp' | xargs clang-format -i
 
 ## clang-tidy
 
-Static analysis tool. Takes a lot of CPU to run, but finds a lot of valid issuses.
+Static analysis tool. Takes a lot of CPU to run, but finds a lot of valid issues.
 
 ## compiler-explorer
 
@@ -33,7 +33,7 @@ Online compiler. Great for testing small code snippets. Does not currently have 
 
 ## Makefile/Scripts
 
-I usally wrap all the common commands in a Makefile. Just to save some typing.
+I usually wrap all the common commands in a Makefile. Just to save some typing.
 
 ```make
 CONFIG ?= Release

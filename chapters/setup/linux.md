@@ -7,7 +7,7 @@
 |      x11      |             Unix windowing system.             |                               |
 |   xinerama    |        Multi display extension to x11.         |                               |
 |    LibXext    |            More extensions to x11.             |                               |
-|    asound2    |              ALSA sound library.               |                               |
+|    ALSA    |              ALSA sound library.               |                               |
 |   freetype    |                 Font library.                  |                               |
 |   glu1-mesa   |                                                |                               |
 |  webkit2gtk   |             WebKit Browser Engine              | Optional `JUCE_WEB_BROWSER=0` |

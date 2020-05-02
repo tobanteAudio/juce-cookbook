@@ -86,6 +86,16 @@ Shader
 AppStore
 xcpretty
 Choco
+x11
+xinerama
+LibXext
+ALSA
+freetype
+glu1-mesa
+webkit2gtk
+WebKit
+curl4-openssl
+ToDo
  - chapters/ci.md
 TLDR
  - chapters/testing/pluginval.md
