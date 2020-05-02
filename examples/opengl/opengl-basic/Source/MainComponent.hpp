@@ -1,26 +1,25 @@
 #pragma once
 
-#include "../JuceLibraryCode/JuceHeader.h"
+#include "JuceHeader.h"
 
 //==============================================================================
 /*
     This component lives inside our window, and this is where you should put all
     your controls and content.
 */
-class MainComponent : public OpenGLAppComponent
+class MainComponent : public juce::OpenGLAppComponent
 {
 public:
     //==============================================================================
     MainComponent();
     ~MainComponent();
 
-    //==============================================================================
     void initialise() override;
     void shutdown() override;
     void render() override;
 
     //==============================================================================
-    void paint(Graphics& g) override;
+    void paint(juce::Graphics& g) override;
     void resized() override;
 
 private:

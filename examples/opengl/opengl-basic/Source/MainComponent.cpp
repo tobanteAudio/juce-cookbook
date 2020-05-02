@@ -30,7 +30,7 @@ void MainComponent::shutdown()
 void MainComponent::render()
 {
     // This clears the context with a black background.
-    OpenGLHelpers::clear(Colours::green);
+    juce::OpenGLHelpers::clear(juce::Colours::green);
 
     // Points in 3D space
     GLfloat verts[] {-1.0f, -1.0f, 0.0f, 1.0f, -1.0f, 0.0f, 0.0f, 1.0f, 0.0f};
@@ -56,7 +56,7 @@ void MainComponent::render()
 }
 
 //==============================================================================
-void MainComponent::paint(Graphics& g)
+void MainComponent::paint(juce::Graphics& g)
 {
     // You can add your component specific drawing code here!
     // This will draw over the top of the openGL background.
