@@ -101,6 +101,7 @@ github.com
 juce-framework
 juce6
 juce-6-demo
+gitbook
  - chapters/ci.md
 TLDR
  - chapters/testing/pluginval.md
