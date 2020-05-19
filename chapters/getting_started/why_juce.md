@@ -22,19 +22,21 @@ Long story short, JUCE is a library which solves many common problems a develope
   - AAX
   - UNITY
   - LADSPA
-- DSP Building Blocks
-  - Gain
-  - Filters (IIR, FIR, StateVariable)
+- [DSP Building Blocks](https://docs.juce.com/master/tutorial_dsp_introduction.html)
+  - [Gain](https://docs.juce.com/master/classdsp_1_1Gain.html)
+  - [Filters (IIR, FIR, StateVariable)](https://docs.juce.com/master/group__juce__dsp-processors.html)
   - Panner
-  - Reverb
-  - Oscillator
-  - Waveshaper
-  - Convoluation
-  - Oversampling
+  - [Reverb](https://docs.juce.com/master/classdsp_1_1Reverb.html) (Freevrb Implementation)
+  - [Oscillator](https://docs.juce.com/master/classdsp_1_1Oscillator.html)
+  - [Waveshaper](https://docs.juce.com/master/structdsp_1_1WaveShaper.html)
+  - [Convoluation](https://docs.juce.com/master/classdsp_1_1Convolution.html)
+  - [Oversampling](https://docs.juce.com/master/classdsp_1_1Oversampling.html)
+  - [Many math functions](https://docs.juce.com/master/group__juce__dsp-maths.html)
 - Analysis
   - RMS & Peak
-  - FFT
+  - [FFT](https://docs.juce.com/master/classdsp_1_1FFT.html)
 - Vector instructions (SIMD) for x86_64 and ARM
+  - [SIMDWrapper](https://docs.juce.com/master/structdsp_1_1SIMDRegister.html)
 
 ### Mobil
 
