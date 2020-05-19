@@ -6,6 +6,8 @@ The following list is definitely not complete, but should give you a good overvi
 
 ## QT
 
+- [qt.io](https://www.qt.io/)
+
 If you have been programming with C++ for a while, you probably heard of Qt. It's been around since the mid 90's and is currently being developed by The Qt Company.
 
 The goal of Qt is to do it all. It runs on almost every platform including BSDs and embedded platforms. Because of this the whole framework is huge. While JUCE is around a couple of hundred megabytes, Qt is more in the range of a couple gigabytes.
@@ -18,12 +20,26 @@ Qt is free for open source projects, but a license for closed source application
 
 ## SFML
 
-- very simple
-- intended for games
+- [sfml-dev.org](https://www.sfml-dev.org/)
+- [github.com/SFML/SFML](https://github.com/SFML/SFML)
+
+### Summary
+
+- Very simple API
+- Intended for games / 2D graphics
 
 ## IMGUI
 
-- very simple
-- intended for simple widgets
-- works well with SFML
-  - cpp_box
+- [github.com/ocornut/imgui](https://github.com/ocornut/imgui)
+
+### Summary
+
+- Not so easy to integrate
+- Intended for simple UI widgets
+- Works well with SFML, SDL, OpenGL
+- Example Projects
+  - [github.com/tobanteAudio/moci](https://github.com/tobanteAudio/moci)
+
+## Other
+
+Let me know if you think other libraries should be listed here, but let's keep it at C++ only.
