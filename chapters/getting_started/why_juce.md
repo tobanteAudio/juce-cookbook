@@ -29,7 +29,7 @@ Long story short, JUCE is a library which solves many common problems a develope
   - Reverb
   - Oscillator
   - Waveshaper
-  - Conveluation
+  - Convoluation
   - Oversampling
 - Analysis
   - RMS & Peak
