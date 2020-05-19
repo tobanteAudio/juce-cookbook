@@ -13,3 +13,5 @@
 dist/
 _book
 test.txt
+
+node_modules

@@ -6,8 +6,9 @@ script-anchors:
   - &script-publish
     - cd $TRAVIS_BUILD_DIR
     - yarn global add gitbook-cli gitbook-plugin-ga
-    - make pdf
+    - gitbook install
     - make html
+    # - make pdf
 
 matrix:
   include:
@@ -22,13 +23,13 @@ matrix:
             - libxss1
       script: *script-publish
       deploy:
-        - provider: releases
-          api_key: $GITHUB_TOKEN
-          name: Build $(date +'%d.%m.%Y %R')
-          file: $TRAVIS_BUILD_DIR/dist/JUCE-Cookbook.pdf
-          skip_cleanup: true
-          on:
-            branch: master
+        # - provider: releases
+        #   api_key: $GITHUB_TOKEN
+        #   name: Build $(date +'%d.%m.%Y %R')
+        #   file: $TRAVIS_BUILD_DIR/dist/JUCE-Cookbook.pdf
+        #   skip_cleanup: true
+        #   on:
+        #     branch: master
         - provider: pages
           skip_cleanup: true
           local_dir: $TRAVIS_BUILD_DIR/dist/html

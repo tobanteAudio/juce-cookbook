@@ -1,14 +1,14 @@
-.PHONY: pdf clean stats format
-default: pdf
+.PHONY: clean stats format
+default: dev
 
 PDF_NAME = JUCE-Cookbook.pdf
 DIST_DIR = dist
 
 
-.PHONY: pdf
-pdf:
-	mkdir -p $(DIST_DIR)
-	gitbook pdf . $(DIST_DIR)/$(PDF_NAME)
+# .PHONY: pdf
+# pdf:
+# 	mkdir -p $(DIST_DIR)
+# 	gitbook pdf . $(DIST_DIR)/$(PDF_NAME)
 
 .PHONY: html
 html:
