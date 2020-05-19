@@ -4,6 +4,7 @@ default: pdf
 PDF_NAME = JUCE-Cookbook.pdf
 DIST_DIR = dist
 
+
 .PHONY: pdf
 pdf:
 	mkdir -p $(DIST_DIR)

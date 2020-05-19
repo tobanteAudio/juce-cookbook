@@ -5,7 +5,7 @@ branches:
 script-anchors:
   - &script-publish
     - cd $TRAVIS_BUILD_DIR
-    - yarn global add gitbook-cli
+    - yarn global add gitbook-cli gitbook-plugin-ga
     - make pdf
     - make html
 

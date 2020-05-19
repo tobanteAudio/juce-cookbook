@@ -8,5 +8,11 @@
     "fontSize": 12,
     "fontFamily": "Arial",
     "paperSize": "a4"
+  },
+  "plugins": ["ga"],
+  "pluginsConfig": {
+    "ga": {
+      "token": "UA-167039761-1"
+    }
   }
 }
