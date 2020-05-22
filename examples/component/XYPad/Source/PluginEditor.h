@@ -2,6 +2,8 @@
 
 #include "PluginProcessor.h"
 
+#include "XYPad.h"
+
 namespace tobanteAudio
 {
 class PluginEditor : public juce::AudioProcessorEditor
@@ -16,6 +18,7 @@ public:
 private:
     PluginProcessor& processor;
 
+    tobanteAudio::XYPad pad_;
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(PluginEditor)
 };
 
