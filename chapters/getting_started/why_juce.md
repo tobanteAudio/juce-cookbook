@@ -8,7 +8,7 @@ Long story short, JUCE is a library which solves many common problems a develope
 
 - Easy to use UI components
   - [Label](https://docs.juce.com/master/classLabel.html)
-  - Buttons ([Text](https://docs.juce.com/master/classTextButton.html), [Toogle](https://docs.juce.com/master/classToggleButton.html) & ...)
+  - Buttons ([Text](https://docs.juce.com/master/classTextButton.html), [Toggle](https://docs.juce.com/master/classToggleButton.html) & ...)
   - [Slider](https://docs.juce.com/master/classSlider.html)
   - [Combobox](https://docs.juce.com/master/classComboBox.html)
   - [TabbedView](https://docs.juce.com/master/classTabbedComponent.html)
@@ -26,10 +26,10 @@ Long story short, JUCE is a library which solves many common problems a develope
   - [Gain](https://docs.juce.com/master/classdsp_1_1Gain.html)
   - [Filters (IIR, FIR, StateVariable)](https://docs.juce.com/master/group__juce__dsp-processors.html)
   - Panner
-  - [Reverb](https://docs.juce.com/master/classdsp_1_1Reverb.html) (Freevrb Implementation)
+  - [Reverb](https://docs.juce.com/master/classdsp_1_1Reverb.html) (Freeverb Implementation)
   - [Oscillator](https://docs.juce.com/master/classdsp_1_1Oscillator.html)
   - [Waveshaper](https://docs.juce.com/master/structdsp_1_1WaveShaper.html)
-  - [Convoluation](https://docs.juce.com/master/classdsp_1_1Convolution.html)
+  - [Convolution](https://docs.juce.com/master/classdsp_1_1Convolution.html)
   - [Oversampling](https://docs.juce.com/master/classdsp_1_1Oversampling.html)
   - [Many math functions](https://docs.juce.com/master/group__juce__dsp-maths.html)
 - Analysis

@@ -102,7 +102,47 @@ juce-framework
 juce6
 juce-6-demo
 gitbook
+2015
+Schurr
+Rainer
+Saks
+2016
+Goodliffe
+Doumler
+Cpp
+qt.io
+sfml-dev
+org
+ocornut
+imgui
+SDL
+moci
+TabbedView
+VST3
+AAX
+LADSPA
+IIR
+StateVariable
+Panner
+Freeverb
+Waveshaper
+math
+RMS
+FFT
+x86_64
+SharedCode
  - chapters/ci.md
 TLDR
  - chapters/testing/pluginval.md
 github.com
+ - chapters/cpp.md
+Dionne
+2019
+RAII
+1
+2
+ - chapters/cpp/resources.md
+2014
+2018
+ - chapters/getting_started/why_juce.md
+SIMDWrapper
