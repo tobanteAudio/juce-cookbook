@@ -19,6 +19,7 @@
 - [Coding]()
   - [User Interface]()
     - [Component](chapters/coding/user_interface/component.md)
+    - [Button](chapters/coding/user_interface/button.md)
     - [Look&Feel](chapters/coding/user_interface/look_and_feel.md)
   - [Plug-in]()
     - [Basics](chapters/coding/plugin/basics.md)
