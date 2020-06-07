@@ -11,11 +11,6 @@
 
 ## Install
 
-```sh
-brew install cmake ninja-build
-gem install xcpretty
-```
-
 ### Xcode
 
 Xcode is Apples in-house IDE. The same that Visual Studio is to Windows. Xcode is free for personal and professional use. So no fees required. The only thing that you will need, is an Apple Computer that is signed in to your Apple ID. If that's the case you can simply search for Xcode on the AppStore and start downloading. This may take a while, depending on your internet connection, since it needs to download around 10 gigabytes.
@@ -47,9 +42,23 @@ export PATH=/path/to/Projucer.app/Contents/MacOS:$PATH
 
 ## Tools
 
+### Homebrew
+
+Homebrew is a package manager for the mac operating system. If you have ever worked on Linux before, this should be very familiar to you. If you have never heard the term "package manager" before, don't worry! Think of it as an app store on your command line, after installing it from the [website](https://brew.sh) you can run this single line in your terminal to install almost all the tools that we will need.
+
+```sh
+brew install doxygen clang-format clang-tidy cmake ninja-build
+```
+
+We will take a closer look at these tools in later chapters.
+
 ### xcpretty
 
 xcpretty's job, is to pretty print the command line output from Xcode. By default, the output is very verbose. xcpretty cleans this up.
+
+```sh
+gem install xcpretty
+```
 
 ```sh
 xcodebuild [flags] | xcpretty                       # Pretty print
