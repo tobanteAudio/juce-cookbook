@@ -32,3 +32,35 @@ git clone https://github/juce-framework/JUCE.git
 
 - Open `JUCE/extras/Projucer/Builds/VisualStudio2019/Projucer.sln`
 - Build in `Release` mode
+
+### Package Manager
+
+Like Linux and macOS, Windows has package managers available. They make it easier to install, update and remove applications from your system.
+
+If you're unsure which one to choose, I'd recommend going with Scoop. For me personally it has proven to be the most stable and easy to work with.
+
+#### Scoop
+
+- [Website](https://scoop.sh/)
+
+You can install Scoop, by following the instructions on their website. Not that you may have to run this additional command to allow scripts from remote locations. Powershell should also be launch in admin mode.
+
+After Scoop is installed, you can run the following command to install applications. If you are unsure if Scoop supports the application you are looking for, you can run the search command to find applications, but not install them.
+
+```ps
+scoop install doxygen
+scoop search doxygen
+```
+
+#### Chocolatey
+
+- [Website](https://chocolatey.org/install)
+
+Choco's installation process is almost identical to Scoop. Simply follow the instructions on their website and you're done.
+
+The commands are also identical.
+
+```ps
+choco install doxygen
+choco search doxygen
+```
