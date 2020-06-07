@@ -17,7 +17,7 @@ Xcode is Apples in-house IDE. The same that Visual Studio is to Windows. Xcode i
 
 ### JUCE via download
 
-Go the [JUCE website](https://shop.juce.com/get-juce). Find the most recent version for `macOS` and download the zip file. Afterwards you should extract it to some place of your liking. Your home directory or application folder would be good options.
+Go to the [JUCE website](https://shop.juce.com/get-juce). Find the most recent version for `macOS` and download the zip file. Afterwards you should extract it to some place of your liking. Your home directory or application folder would be good options.
 
 ### JUCE via git
 
